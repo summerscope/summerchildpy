@@ -1,4 +1,4 @@
-# Sweet summer-child score
+# Sweet summer child score
 _Risk assessment quiz for automation and ML_
 
 ## Overview
