@@ -1,0 +1,363 @@
+[
+  {
+    "id": "Q1",
+    "text": "Section #0 - Multiplier. \n To continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": "",
+        "nextq": "Q2"
+      }
+    }
+  },
+  {
+    "id": "Q2",
+    "text": "How large is the target cohort for your decision system? \nThese are the people your system makes decisions, predictions or classifications about.",
+    "answers": {
+      "A": {
+        "text": "1-100",
+        "multiplier": 0.52,
+        "nextq": "Q3"
+      },
+      "B": {
+        "text": "101-1,000",
+        "multiplier": 0.75,
+        "nextq": "Q3"
+      },
+      "C": {
+        "text": "1,001-10,000",
+        "multiplier": 0.85,
+        "nextq": "Q3"
+      },
+      "D": {
+        "text": "10,001-100,000",
+        "multiplier": 0.95,
+        "nextq": "Q3"
+      },
+      "E": {
+        "text": "100,001-1,000,000",
+        "multiplier": 0.96,
+        "nextq": "Q3"
+      },
+      "F": {
+        "text": "1,000,001-10,000,000",
+        "multiplier": 0.98,
+        "nextq": "Q3"
+      },
+      "G": {
+        "text": "10 million +",
+        "multiplier": 1.0,
+        "nextq": "Q3"
+      }
+    }
+  },
+  {
+    "id": "Q3",
+    "text": "How is your target cohort distributed geographically?",
+    "answers": {
+      "A": {
+        "text": "Rural/Remote",
+        "multiplier": "",
+        "nextq": "Q4"
+      },
+      "B": {
+        "text": "Small-Medium Town",
+        "multiplier": "",
+        "nextq": "Q4"
+      },
+      "C": {
+        "text": "Large Town - City",
+        "multiplier": "",
+        "nextq": "Q4"
+      },
+      "D": {
+        "text": "State",
+        "multiplier": "",
+        "nextq": "Q4"
+      },
+      "E": {
+        "text": "National",
+        "multiplier": "",
+        "nextq": "Q4"
+      },
+      "F": {
+        "text": "2-3 Countries",
+        "multiplier": "",
+        "nextq": "Q4"
+      },
+      "G": {
+        "text": "Global",
+        "multiplier": "",
+        "nextq": "Q4"
+      }
+    }    
+  },
+  {
+    "id": "Q4",
+    "text": "Section #1 - Cohort scan. \n To continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": "",
+        "nextq": "Q5"
+      }
+    }
+  },
+  {
+    "id": "Q5",
+    "text": "Is your target cohort economically vulnerable? \n Look at average earning rates of your country if you aren't sure where your demographic sits overall.",
+    "answers": {
+      "A": {
+        "text": "Top 10% of earners",
+        "score": 0,
+        "nextq": "Q6"
+      },
+      "B": {
+        "text": "Less vulnerable than average",
+        "score": 1,
+        "nextq": "Q6"
+      },
+      "C": {
+        "text": "Average",
+        "score": 3,
+        "nextq": "Q6"
+      },
+      "D": {
+        "text": "More vulnerable than average",
+        "score": 6,
+        "nextq": "Q6"
+      },
+      "E": {
+        "text": "Bottom 10% of earners",
+        "score": 8,
+        "nextq": "Q6"
+      }
+    }
+  },
+  {
+    "id": "Q6",
+    "text": "Is your target cohort psychologically vulnerable? \n Are they likely to suffer from mental health issues, self-harm, or to have their capacity to work, study, or pursue their goals impacted by debilitating mental illness?",
+    "answers": {
+      "A": {
+        "text": "Very robust",
+        "score": 0,
+        "nextq": "Q7"
+      },
+      "B": {
+        "text": "Less vulnerable than average",
+        "score": 1,
+        "nextq": "Q7"
+      },
+      "C": {
+        "text": "Average",
+        "score": 2,
+        "nextq": "Q7"
+      },
+      "D": {
+        "text": "More vulnerable than average",
+        "score": 3,
+        "nextq": "Q7"
+      },
+      "E": {
+        "text": "Extremely vulnerable",
+        "score": 5,
+        "nextq": "Q7"
+      }
+    }
+  },
+  {
+    "id": "Q7",
+    "text": "Is your target cohort vulnerable to coercive control? \n Consider parents controlling LGBTQI children. Jaime Spears. Elder abuse. Intimate partner abuse. Technological coercion or control.",
+    "answers": {
+      "A": {
+        "text": "Not vulnerable",
+        "score": 0,
+        "nextq": "Q8"
+      },
+      "B": {
+        "text": "Less vulnerable than average",
+        "score": 1,
+        "nextq": "Q8"
+      },
+      "C": {
+        "text": "Average",
+        "score": 2,
+        "nextq": "Q8"
+      },
+      "D": {
+        "text": "More vulnerable than average",
+        "score": 3,
+        "nextq": "Q8"
+      },
+      "E": {
+        "text": "Extremely vulnerable",
+        "score": 5,
+        "nextq": "Q8"
+      }
+    }
+  },
+  {
+    "id": "Q8",
+    "text": "Is your target cohort over-policed or over-surveilled? \n Are they more likely than the average population in any aspect of their lives to be targeted by police, social services or surveillance systems?",
+    "answers": {
+      "A": {
+        "text": "Very unlikely",
+        "score": 0,
+        "nextq": "Q9"
+      },
+      "B": {
+        "text": "Less likely than average",
+        "score": 1,
+        "nextq": "Q9"
+      },
+      "C": {
+        "text": "Average",
+        "score": 2,
+        "nextq": "Q9"
+      },
+      "D": {
+        "text": "More likely than average",
+        "score": 3,
+        "nextq": "Q9"
+      },
+      "E": {
+        "text": "Extremely likely",
+        "score": 5,
+        "nextq": "Q9"
+      }
+    }
+  },
+  {
+    "id": "Q9",
+    "text": "Is your target cohort technologically vulnerable? \n Will they have more difficulty navigating technological systems than average? Poor digital literacy? Do they have a higher rate of visual impairments or other disabilities which would compound this?",
+    "answers": {
+      "A": {
+        "text": "Top 10% of computer users",
+        "score": 0,
+        "nextq": "Q10"
+      },
+      "B": {
+        "text": "More confident than average",
+        "score": 1,
+        "nextq": "Q10"
+      },
+      "C": {
+        "text": "Average",
+        "score": 2,
+        "nextq": "Q10"
+      },
+      "D": {
+        "text": "Less confident than average",
+        "score": 3,
+        "nextq": "Q10"
+      },
+      "E": {
+        "text": "Bottom 10% of computer users",
+        "score": 5,
+        "nextq": "Q10"
+      }
+    }
+  },
+  {
+    "id": "Q10",
+    "text": "Does your target cohort have robust internet access? \n Is your target cohort in a remote area with poor infrastructure? Exposed to download or over-limit fees? Access on 1 or more devices? Internet sharing or have own service? Physically at-risk if they try to access public internet? Are they accessing the internet from cellular networks, NBN, ADSL, Broadband, other?",
+    "answers": {
+      "A": {
+        "text": "Top 10%",
+        "score": 0,
+        "nextq": "Q11"
+      },
+      "B": {
+        "text": "Better access than average",
+        "score": 1,
+        "nextq": "Q11"
+      },
+      "C": {
+        "text": "Average access",
+        "score": 2,
+        "nextq": "Q11"
+      },
+      "D": {
+        "text": "Worse access than average",
+        "score": 3,
+        "nextq": "Q11"
+      },
+      "E": {
+        "text": "Bottom 10%",
+        "score": 5,
+        "nextq": "Q11"
+      }
+    }
+  },
+  {
+    "id": "Q11",
+    "text": "Section #2 - System scan. \n To continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": "",
+        "nextq": "Q2"
+      }
+    }
+  },
+  {
+    "id": "Q12",
+    "text": "Does your decision system operate as part of a competitive marketplace, or are you the only provider of the specific service, platform, resource or goods? Looking for viable alternatives. Competitors need to be known to your target cohort. Consider network effects, brand visibility, feature parity, etc. If competitors exist but consumers can't find them, or if the cost of adoption is very high, select 'effective monopoly'.",
+    "answers": {
+      "A": "Effective monopoly or government service",
+      "B": "1 competitor",
+      "C": "2 competitors",
+      "D": "3-4 competitors",
+      "E": "5+ competitors"
+    },
+    "score": {
+      "A": 0,
+      "B": 1,
+      "C": 2,
+      "D": 3,
+      "E": 5
+    }
+  },
+  {
+    "id": "Q13",
+    "text": "Is your decision system mandatory or optional? \n Mandatory systems will be mostly government applications; paying taxes, rent, complying with judicial hearings or prison sentences, etc.",
+    "answers": {
+      "A": "Mandatory",
+      "B": "Optional"
+    },
+    "score": {
+      "A": 0,
+      "B": 0
+    }
+  },
+  {
+    "id": "Q14",
+    "text": "Is your decision system opt-in or opt-out? \n Does the target cohort actively choose to participate or add themselves? Or are they included by default and have to actively remove themselves?",
+    "answers": {
+      "A": "Opt-in",
+      "B": "Opt-out"
+    },
+    "score": {
+      "A": 0,
+      "B": 0
+    }
+  },
+  {
+    "id": "Q15",
+    "text": "How visible or discoverable is it that the target cohort has been opted-into the system? \n Do you notify them, is the operation of your system visible, or do they have to find it in a setting or lodge their own query?",
+    "answers": {
+      "A": "Very hard to find",
+      "B": "Somewhat hard to find ",
+      "C": "Average",
+      "D": "Discoverable",
+      "E": "Very discoverable"
+    },
+    "score": {
+      "A": 0,
+      "B": 1,
+      "C": 2,
+      "D": 3,
+      "E": 5
+    }
+  }
+]

@@ -1,0 +1,29 @@
+,id,text,answers.Ok.text,answers.Ok.score,answers.Ok.nextq,answers.A.text,answers.A.multiplier,answers.A.nextq,answers.B.text,answers.B.multiplier,answers.B.nextq,answers.C.text,answers.C.multiplier,answers.C.nextq,answers.D.text,answers.D.multiplier,answers.D.nextq,answers.E.text,answers.E.multiplier,answers.E.nextq,answers.F.text,answers.F.multiplier,answers.F.nextq,answers.G.text,answers.G.multiplier,answers.G.nextq,answers.A.score,answers.B.score,answers.C.score,answers.D.score,answers.E.score,answers.A,answers.B,answers.C,answers.D,answers.E,score.A,score.B,score.C,score.D,score.E
+0,Q1,"Section #0 - Multiplier. 
+ To continue, type 'Ok'",Ok,,Q2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+1,Q2,"How large is the target cohort for your decision system? 
+These are the people your system makes decisions, predictions or classifications about.",,,,1-100,0.52,Q3,"101-1,000",0.75,Q3,"1,001-10,000",0.85,Q3,"10,001-100,000",0.95,Q3,"100,001-1,000,000",0.96,Q3,"1,000,001-10,000,000",0.98,Q3,10 million +,1.0,Q3,,,,,,,,,,,,,,,
+2,Q3,How is your target cohort distributed geographically?,,,,Rural/Remote,,Q4,Small-Medium Town,,Q4,Large Town - City,,Q4,State,,Q4,National,,Q4,2-3 Countries,,Q4,Global,,Q4,,,,,,,,,,,,,,,
+3,Q4,"Section #1 - Cohort scan. 
+ To continue, type 'Ok'",Ok,,Q5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+4,Q5,"Is your target cohort economically vulnerable? 
+ Look at average earning rates of your country if you aren't sure where your demographic sits overall.",,,,Top 10% of earners,,Q6,Less vulnerable than average,,Q6,Average,,Q6,More vulnerable than average,,Q6,Bottom 10% of earners,,Q6,,,,,,,0.0,1.0,3.0,6.0,8.0,,,,,,,,,,
+5,Q6,"Is your target cohort psychologically vulnerable? 
+ Are they likely to suffer from mental health issues, self-harm, or to have their capacity to work, study, or pursue their goals impacted by debilitating mental illness?",,,,Very robust,,Q7,Less vulnerable than average,,Q7,Average,,Q7,More vulnerable than average,,Q7,Extremely vulnerable,,Q7,,,,,,,0.0,1.0,2.0,3.0,5.0,,,,,,,,,,
+6,Q7,"Is your target cohort vulnerable to coercive control? 
+ Consider parents controlling LGBTQI children. Jaime Spears. Elder abuse. Intimate partner abuse. Technological coercion or control.",,,,Not vulnerable,,Q8,Less vulnerable than average,,Q8,Average,,Q8,More vulnerable than average,,Q8,Extremely vulnerable,,Q8,,,,,,,0.0,1.0,2.0,3.0,5.0,,,,,,,,,,
+7,Q8,"Is your target cohort over-policed or over-surveilled? 
+ Are they more likely than the average population in any aspect of their lives to be targeted by police, social services or surveillance systems?",,,,Very unlikely,,Q9,Less likely than average,,Q9,Average,,Q9,More likely than average,,Q9,Extremely likely,,Q9,,,,,,,0.0,1.0,2.0,3.0,5.0,,,,,,,,,,
+8,Q9,"Is your target cohort technologically vulnerable? 
+ Will they have more difficulty navigating technological systems than average? Poor digital literacy? Do they have a higher rate of visual impairments or other disabilities which would compound this?",,,,Top 10% of computer users,,Q10,More confident than average,,Q10,Average,,Q10,Less confident than average,,Q10,Bottom 10% of computer users,,Q10,,,,,,,0.0,1.0,2.0,3.0,5.0,,,,,,,,,,
+9,Q10,"Does your target cohort have robust internet access? 
+ Is your target cohort in a remote area with poor infrastructure? Exposed to download or over-limit fees? Access on 1 or more devices? Internet sharing or have own service? Physically at-risk if they try to access public internet? Are they accessing the internet from cellular networks, NBN, ADSL, Broadband, other?",,,,Top 10%,,Q11,Better access than average,,Q11,Average access,,Q11,Worse access than average,,Q11,Bottom 10%,,Q11,,,,,,,0.0,1.0,2.0,3.0,5.0,,,,,,,,,,
+10,Q11,"Section #2 - System scan. 
+ To continue, type 'Ok'",Ok,,Q2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+11,Q12,"Does your decision system operate as part of a competitive marketplace, or are you the only provider of the specific service, platform, resource or goods? Looking for viable alternatives. Competitors need to be known to your target cohort. Consider network effects, brand visibility, feature parity, etc. If competitors exist but consumers can't find them, or if the cost of adoption is very high, select 'effective monopoly'.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Effective monopoly or government service,1 competitor,2 competitors,3-4 competitors,5+ competitors,0.0,1.0,2.0,3.0,5.0
+12,Q13,"Is your decision system mandatory or optional? 
+ Mandatory systems will be mostly government applications; paying taxes, rent, complying with judicial hearings or prison sentences, etc.",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Mandatory,Optional,,,,0.0,0.0,,,
+13,Q14,"Is your decision system opt-in or opt-out? 
+ Does the target cohort actively choose to participate or add themselves? Or are they included by default and have to actively remove themselves?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Opt-in,Opt-out,,,,0.0,0.0,,,
+14,Q15,"How visible or discoverable is it that the target cohort has been opted-into the system? 
+ Do you notify them, is the operation of your system visible, or do they have to find it in a setting or lodge their own query?",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Very hard to find,Somewhat hard to find ,Average,Discoverable,Very discoverable,0.0,1.0,2.0,3.0,5.0
