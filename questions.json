@@ -304,60 +304,535 @@
     "id": "Q12",
     "text": "Does your decision system operate as part of a competitive marketplace, or are you the only provider of the specific service, platform, resource or goods? Looking for viable alternatives. Competitors need to be known to your target cohort. Consider network effects, brand visibility, feature parity, etc. If competitors exist but consumers can't find them, or if the cost of adoption is very high, select 'effective monopoly'.",
     "answers": {
-      "A": "Effective monopoly or government service",
-      "B": "1 competitor",
-      "C": "2 competitors",
-      "D": "3-4 competitors",
-      "E": "5+ competitors"
-    },
-    "score": {
-      "A": 0,
-      "B": 1,
-      "C": 2,
-      "D": 3,
-      "E": 5
+      "A": {
+        "text": "Effective monopoly or government service",
+        "score": 5,
+        "nextq": "Q13"
+      },
+      "B": {
+        "text": "1 competitor",
+        "score": 4,
+        "nextq": "Q13"
+      },
+      "C": {
+        "text": "2 competitors",
+        "score": 3,
+        "nextq": "Q13"
+      },
+      "D": {
+        "text": "3-4 competitors",
+        "score": 1,
+        "nextq": "Q13"
+      },
+      "E": {
+        "text": "5+ competitors",
+        "score": 0,
+        "nextq": "Q13"
+      }
     }
   },
   {
     "id": "Q13",
     "text": "Is your decision system mandatory or optional? \n Mandatory systems will be mostly government applications; paying taxes, rent, complying with judicial hearings or prison sentences, etc.",
     "answers": {
-      "A": "Mandatory",
-      "B": "Optional"
-    },
-    "score": {
-      "A": 0,
-      "B": 0
+      "A": {
+        "text": "Mandatory",
+        "score": 4,
+        "nextq": "Q18"
+      },
+      "B": {
+        "text": "Optional",
+        "score": 0,
+        "nextq": "Q14"
+      }
     }
   },
   {
     "id": "Q14",
     "text": "Is your decision system opt-in or opt-out? \n Does the target cohort actively choose to participate or add themselves? Or are they included by default and have to actively remove themselves?",
     "answers": {
-      "A": "Opt-in",
-      "B": "Opt-out"
-    },
-    "score": {
-      "A": 0,
-      "B": 0
+      "A": {
+        "text": "Opt-in",
+        "score": 0,
+        "nextq": "Q18"
+      },
+      "B": {
+        "text": "Opt-out",
+        "score": 0,
+        "nextq": "Q15"
+      }
     }
   },
   {
     "id": "Q15",
     "text": "How visible or discoverable is it that the target cohort has been opted-into the system? \n Do you notify them, is the operation of your system visible, or do they have to find it in a setting or lodge their own query?",
     "answers": {
-      "A": "Very hard to find",
-      "B": "Somewhat hard to find ",
-      "C": "Average",
-      "D": "Discoverable",
-      "E": "Very discoverable"
-    },
-    "score": {
-      "A": 0,
-      "B": 1,
-      "C": 2,
-      "D": 3,
-      "E": 5
+      "A": {
+        "text": "Very hard to find",
+        "score": 3,
+        "nextq": "Q16"
+      },
+      "B": {
+        "text": "Somewhat hard to find",
+        "score": 2,
+        "nextq": "Q16"
+      },
+      "C": {
+        "text": "Average",
+        "score": 1,
+        "nextq": "Q16"
+      },
+      "D": {
+        "text": "Discoverable",
+        "score": 0,
+        "nextq": "Q16"
+      },
+      "E": {
+        "text": "Very discoverable",
+        "score": 0,
+        "nextq": "Q16"
+      }
+    }
+  },
+  {
+    "id": "Q16",
+    "text": "How difficult is it to opt out?",
+    "answers": {
+      "A": {
+        "text": "Very difficult",
+        "score": 3,
+        "nextq": "Q17"
+      },
+      "B": {
+        "text": "Somewhat difficult",
+        "score": 2,
+        "nextq": "Q17"
+      },
+      "C": {
+        "text": "Average",
+        "score": 1,
+        "nextq": "Q17"
+      },
+      "D": {
+        "text": "Straight forward",
+        "score": 0,
+        "nextq": "Q17"
+      },
+      "E": {
+        "text": "Very easy",
+        "score": 0,
+        "nextq": "Q17"
+      }
+    }
+  },
+  {
+    "id": "Q17",
+    "text": "How perpetual is opting out? \n Does the user preference remain for system upgrades or migrations, normal use, etc?",
+    "answers": {
+      "A": {
+        "text": "Lasts forever",
+        "score": 0,
+        "nextq": "Q18"
+      },
+      "B": {
+        "text": "Lasts forever (but periodically asked to opt in)",
+        "score": 1,
+        "nextq": "Q18"
+      },
+      "C": {
+        "text": "Reset periodically",
+        "score": 2,
+        "nextq": "Q18"
+      }
+    }
+  },
+  {
+    "id": "Q18",
+    "text": "Can you turn your decision system off instantly if something goes wrong? Can you do this with one click (Y), or do you have to deploy code to take it down (N)?",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q19"
+      },
+      "No": {
+        "text": "No",
+        "score": 3,
+        "nextq": "Q19"
+      }
+    }
+  },
+  {
+    "id": "Q19",
+    "text": "Does your system always output a classification, prediction, or decision?",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 3,
+        "nextq": "Q20"
+      },
+      "No": {
+        "text": "No",
+        "score": 0,
+        "nextq": "Q20"
+      }
+    }
+  },
+  {
+    "id": "Q20",
+    "text": "Do you provide a record of the system decision for individuals, including a unique ID that can be traced in your system log? \n For their reference and for looking up that decision later on. This could be on-screen, email, PDF, etc.",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q21"
+      },
+      "No": {
+        "text": "No",
+        "score": 3,
+        "nextq": "Q21"
+      }
+    }
+  },
+  {
+    "id": "Q21",
+    "text": "Does your decision system collect meaningful consent, including a clear explanation of the uses of data and ramifications of providing consent? \n Note if your consent request is tokenistic, confusing or deliberately misleading you should answer No",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q22"
+      },
+      "No": {
+        "text": "No",
+        "score": 5,
+        "nextq": "Q22"
+      }
+    }
+  },
+  {
+    "id": "Q22",
+    "text": "Does your decision system collect meaningful consent, including a clear explanation of the uses of data and ramifications of providing consent? \n Note if your consent request is tokenistic, confusing or deliberately misleading you should answer No",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q23"
+      },
+      "No": {
+        "text": "No",
+        "score": 5,
+        "nextq": "Q25"
+      }
+    }
+  },
+  {
+    "id": "Q23",
+    "text": " Have you performed user testing to assess the usability of your consent section?",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q24"
+      },
+      "No": {
+        "text": "No",
+        "score": 2,
+        "nextq": "Q24"
+      }
+    }
+  },
+  {
+    "id": "Q24",
+    "text": "Do you provide a mechanism to allow individuals to revoke consent to use their data?",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q25"
+      },
+      "No": {
+        "text": "No",
+        "score": 2,
+        "nextq": "Q25"
+      }
+    }
+  },
+  {
+    "id": "Q25",
+    "text": "Do you provide a mechanism to allow individuals to revoke consent to use their data?",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q26"
+      },
+      "No": {
+        "text": "No",
+        "score": 2,
+        "nextq": "Q26"
+      }
+    }
+  },
+  {
+    "id": "Q26",
+    "text": "Do you provide any visual or text-based explanation of your automated system decision on the decision interface? \n This could be in the form of displaying results for similar candidates, or identifying which feature had a strong impact on their outcome.",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q28"
+      },
+      "No": {
+        "text": "No",
+        "score": 2,
+        "nextq": "Q27"
+      }
+    }
+  },
+  {
+    "id": "Q27",
+    "text": "Can your target cohort request an explanation of the decision they received? \n If they don't understand or agree with the automated decision, is there an existing channel or feedback mechanism for them to request explanation? Are explanations planned and available (e.g. you've designed or planned for them before they are requested)? Note this doesn't include generic feedback mechanisms.",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "nextq": "Q28"
+      },
+      "No": {
+        "text": "No",
+        "score": 1,
+        "nextq": "Q28"
+      }
+    }
+  },
+  {
+    "id": "Q28",
+    "text": "What is the probability that decision review will reverse or change the decision?",
+      "answers": {
+      "A": {
+        "text": "Unlikely",
+        "score": 2,
+        "nextq": "Q29"
+      },
+      "B": {
+        "text": "No different than chance",
+        "score": 1,
+        "nextq": "Q29"
+      },
+      "C": {
+        "text": "Likely",
+        "score": 0,
+        "nextq": "Q29"
+      }
+    }
+  },
+  {
+    "id": "Q29",
+    "text": "On-average how much effort is required by your target cohort to lodge a request for decision review?",
+      "answers": {
+      "A": {
+        "text": "1-2 hours",
+        "score": 2,
+        "nextq": "Q30"
+      },
+      "B": {
+        "text": "1 day",
+        "score": 1,
+        "nextq": "Q30"
+      },
+      "C": {
+        "text": "Longer",
+        "score": 0,
+        "nextq": "Q30"
+      }
+    }
+  },
+  {
+    "id": "Q30",
+    "text": "On-average how long will your decision review process take?",
+      "answers": {
+      "A": {
+        "text": "Instantaneous (machine review)",
+        "score": 2,
+        "nextq": "Q31"
+      },
+      "B": {
+        "text": "1 business day",
+        "score": 1,
+        "nextq": "Q31"
+      },
+      "C": {
+        "text": "Longer",
+        "score": 0,
+        "nextq": "Q31"
+      }
+    }
+  },
+  {
+    "id": "Q31",
+    "text": "Section #3 - Maslov's Hierarchy of needs. \n Slightly updated for the modern era. For this section, we compare the likelihood of harm with no intervention (if your decision system didn't exist) to the likelihood of this harm occurring as a result of your intervention. So if your target cohort are all drinking toxic water and your system reduces the number of people getting toxic water, you're reducing the probability of this harm because of the high base rate. \n  To continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": "",
+        "nextq": "Q32"
+      }
+    }
+  },
+  {
+    "id": "Q32",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Physiological needs? \n (Air, water, food, shelter, sleep, reproduction)",
+      "answers": {
+      "A": {
+        "text": "10% Very unlikely",
+        "score": 0,
+        "nextq": "Q33"
+      },
+      "B": {
+        "text": "33% Unlikely",
+        "score": 1,
+        "nextq": "Q33"
+      },
+      "C": {
+        "text": "50% (no different than chance)",
+        "score": 3,
+        "nextq": "Q33"
+      },
+      "D": {
+        "text": "66% Likely",
+        "score": 6,
+        "nextq": "Q33"
+      },
+      "E": {
+        "text": "90% Very likely",
+        "score": 8,
+        "nextq": "Q33"
+      }
+    }
+  },
+  {
+    "id": "Q33",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Safety needs? \n (Personal security, employment, resources, health, property, internet access, information access, information security)",
+      "answers": {
+      "A": {
+        "text": "10% Very unlikely",
+        "score": 0,
+        "nextq": "Q34"
+      },
+      "B": {
+        "text": "33% Unlikely",
+        "score": 1,
+        "nextq": "Q34"
+      },
+      "C": {
+        "text": "50% (no different than chance)",
+        "score": 2,
+        "nextq": "Q34"
+      },
+      "D": {
+        "text": "66% Likely",
+        "score": 4,
+        "nextq": "Q34"
+      },
+      "E": {
+        "text": "90% Very likely",
+        "score": 7,
+        "nextq": "Q34"
+      }
+    }
+  },
+  {
+    "id": "Q34",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Love and belonging needs? \n (Friendship, intimacy, family, sense of connection, access to online communities)",
+      "answers": {
+      "A": {
+        "text": "10% Very unlikely",
+        "score": 0,
+        "nextq": "Q35"
+      },
+      "B": {
+        "text": "33% Unlikely",
+        "score": 1,
+        "nextq": "Q35"
+      },
+      "C": {
+        "text": "50% (no different than chance)",
+        "score": 2,
+        "nextq": "Q35"
+      },
+      "D": {
+        "text": "66% Likely",
+        "score": 4,
+        "nextq": "Q35"
+      },
+      "E": {
+        "text": "90% Very likely",
+        "score": 6,
+        "nextq": "Q35"
+      }
+    }
+  },
+  {
+    "id": "Q35",
+    "text": " What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Esteem needs? \n (Respect, self-esteem, status, recognition, strength, freedom)",
+      "answers": {
+      "A": {
+        "text": "10% Very unlikely",
+        "score": 0,
+        "nextq": "Q36"
+      },
+      "B": {
+        "text": "33% Unlikely",
+        "score": 1,
+        "nextq": "Q36"
+      },
+      "C": {
+        "text": "50% (no different than chance)",
+        "score": 2,
+        "nextq": "Q36"
+      },
+      "D": {
+        "text": "66% Likely",
+        "score": 4,
+        "nextq": "Q36"
+      },
+      "E": {
+        "text": "90% Very likely",
+        "score": 6,
+        "nextq": "Q36"
+      }
+    }
+  },
+  {
+    "id": "Q36",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Self-actualisation needs? \n (Desire to become the most one can be)",
+      "answers": {
+      "A": {
+        "text": "10% Very unlikely",
+        "score": 0,
+        "nextq": ""
+      },
+      "B": {
+        "text": "33% Unlikely",
+        "score": 1,
+        "nextq": ""
+      },
+      "C": {
+        "text": "50% (no different than chance)",
+        "score": 2,
+        "nextq": ""
+      },
+      "D": {
+        "text": "66% Likely",
+        "score": 3,
+        "nextq": ""
+      },
+      "E": {
+        "text": "90% Very likely",
+        "score": 4,
+        "nextq": ""
+      }
     }
   }
 ]
