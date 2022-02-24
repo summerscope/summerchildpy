@@ -19,9 +19,11 @@ library(tidyverse)
 library(shiny)
 library(shinysurveys)
 
+# Set WD to source file location  -------------------------------------------------------
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # Read in JSON file -------------------------------------------------------
-dat <- jsonlite::fromJSON("questions.json", flatten = TRUE) %>%
+dat <- jsonlite::fromJSON("../questions.json", flatten = TRUE) %>%
   mutate(qn_text = text, .keep = "unused")
 
 dat_long <- dat %>% 
@@ -42,6 +44,7 @@ survey_qns <- dat_long %>%
          input_id = id,
          required = TRUE,
          dependence = FALSE, 
+         page = id,
          .keep = "unused") %>%
   as.data.frame()
 
