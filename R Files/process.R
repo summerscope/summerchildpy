@@ -46,7 +46,8 @@ survey_qns <- dat_long %>%
          required = TRUE,
          dependence = NA,
          dependence_value = NA,
-         page = str_extract(question, "Section #[0-9]+"),
+        # page = str_extract(question, "Section #[0-9]+"),
+         page = input_id,
          .keep = "unused") %>%
   fill(page) %>% as.data.frame()
 
@@ -71,12 +72,15 @@ for (qn in sort(unique(depend$input_id), decreasing = FALSE)){
   survey_qns <- survey_qns %>% 
     mutate(
       dependence = ifelse(input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1))), 
-                         qn,
-                        dependence),
+                          qn,
+                          dependence),
       dependence_value = ifelse(input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1))),
-                            next_option,
-                            dependence_value)
-    )
+                                next_option,
+                                dependence_value),
+      page = ifelse((input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1)))) & (page == input_id),
+                    paste0("Q", min(question_range$nextq) - 1),
+                    page)    
+      )
 }
 
 # Launch survey --------------------------------------------------------------
