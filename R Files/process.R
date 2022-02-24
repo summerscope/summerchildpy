@@ -91,7 +91,7 @@ server <- function(input, output, session) {
   observeEvent(input$submit, {
     showModal(modalDialog(
       title = "Congrats, you completed your first shinysurvey!",
-      "You can customize what actions happen when a user finishes a survey using input$submit."
+      "You can customize what actions happen when a user finishes a survey using input$submit.",
     ))
   })
 }
