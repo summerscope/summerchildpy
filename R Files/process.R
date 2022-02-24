@@ -36,20 +36,50 @@ dat_long <- dat %>%
   filter (!is.na(text))
 
 
-# Generate survey ---------------------------------------------------------
+# Create required data structure for survey ---------------------------------------------------------
+# change column names as per shinysurveys
 survey_qns <- dat_long %>%
-  mutate(input_type = ifelse(Response == "Ok", "y/n", "mc"),
-         question = qn_text,
+  mutate(input_type = ifelse(Response == "Ok", "instructions", "mc"),
+         question = str_replace(qn_text,"To continue, type 'Ok'", ""),
          option = text,
          input_id = id,
          required = TRUE,
-         dependence = FALSE, 
-         page = id,
+         dependence = NA,
+         dependence_value = NA,
+         page = str_extract(question, "Section #[0-9]+"),
          .keep = "unused") %>%
-  as.data.frame()
+  fill(page) %>% as.data.frame()
 
-## below code is not yet working
-## also don't know whether shinysurveys can be used to dynamically define next question
+# determine questions with dependencies 
+dependencies <- survey_qns %>% 
+  select(input_id, nextq) %>% 
+  group_by(input_id) %>% 
+  summarise(num_nextq = n_distinct(nextq)) %>% 
+  filter(num_nextq > 1)
+dependencies <- survey_qns %>% 
+  filter(input_id %in% dependencies$input_id) %>% 
+  select(input_id, option, nextq)
+
+# assign dependencies
+for (qn in sort(unique(depend$input_id), decreasing = FALSE)){
+  question_range <- dependencies %>% 
+    filter(input_id == qn) %>% 
+    mutate(nextq = as.numeric(str_extract(nextq, "([0-9]+)")))
+  next_option <- question_range %>% 
+    filter(nextq == min(nextq)) %>% 
+    select(option)
+  survey_qns <- survey_qns %>% 
+    mutate(
+      dependence = ifelse(input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1))), 
+                         qn,
+                        dependence),
+      dependence_value = ifelse(input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1))),
+                            next_option,
+                            dependence_value)
+    )
+}
+
+# Launch survey --------------------------------------------------------------
 ui <- fluidPage(
   surveyOutput(df = survey_qns,
                survey_title = "Sweet Summer Child Score (SSCS)",
@@ -58,7 +88,6 @@ ui <- fluidPage(
 
 server <- function(input, output, session) {
   renderSurvey()
-  
   observeEvent(input$submit, {
     showModal(modalDialog(
       title = "Congrats, you completed your first shinysurvey!",
@@ -68,6 +97,5 @@ server <- function(input, output, session) {
 }
 
 shinyApp(ui, server)
-
 
 
