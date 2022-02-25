@@ -3,10 +3,10 @@
 # process.R
 #
 # This file is used to generate a survey to estimate experimental risk
-# 
-# Created by RLadies Melbourne 
+#
+# Created by RLadies Melbourne
 # 22/2/2022
-# 
+#
 ######################################################################
 
 # Load libraries ----------------------------------------------------------
@@ -19,6 +19,8 @@ library(tidyverse)
 library(shiny)
 library(shinysurveys)
 
+
+
 # Set WD to source file location  -------------------------------------------------------
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
@@ -26,7 +28,7 @@ setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 dat <- jsonlite::fromJSON("../questions.json", flatten = TRUE) %>%
   mutate(qn_text = text, .keep = "unused")
 
-dat_long <- dat %>% 
+dat_long <- dat %>%
   mutate(across(ends_with("score"), ~ as.numeric(.x)),
          across(ends_with("multiplier"), ~ as.numeric(.x))) %>%
   pivot_longer(cols = starts_with("answers"),
@@ -51,27 +53,27 @@ survey_qns <- dat_long %>%
          .keep = "unused") %>%
   fill(page) %>% as.data.frame()
 
-# determine questions with dependencies 
-dependencies <- survey_qns %>% 
-  select(input_id, nextq) %>% 
-  group_by(input_id) %>% 
-  summarise(num_nextq = n_distinct(nextq)) %>% 
+# determine questions with dependencies
+dependencies <- survey_qns %>%
+  select(input_id, nextq) %>%
+  group_by(input_id) %>%
+  summarise(num_nextq = n_distinct(nextq)) %>%
   filter(num_nextq > 1)
-dependencies <- survey_qns %>% 
-  filter(input_id %in% dependencies$input_id) %>% 
+dependencies <- survey_qns %>%
+  filter(input_id %in% dependencies$input_id) %>%
   select(input_id, option, nextq)
 
 # assign dependencies
 for (qn in sort(unique(depend$input_id), decreasing = FALSE)){
-  question_range <- dependencies %>% 
-    filter(input_id == qn) %>% 
+  question_range <- dependencies %>%
+    filter(input_id == qn) %>%
     mutate(nextq = as.numeric(str_extract(nextq, "([0-9]+)")))
-  next_option <- question_range %>% 
-    filter(nextq == min(nextq)) %>% 
+  next_option <- question_range %>%
+    filter(nextq == min(nextq)) %>%
     select(option)
-  survey_qns <- survey_qns %>% 
+  survey_qns <- survey_qns %>%
     mutate(
-      dependence = ifelse(input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1))), 
+      dependence = ifelse(input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1))),
                           qn,
                           dependence),
       dependence_value = ifelse(input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1))),
@@ -79,7 +81,7 @@ for (qn in sort(unique(depend$input_id), decreasing = FALSE)){
                                 dependence_value),
       page = ifelse((input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1)))) & (page == input_id),
                     paste0("Q", min(question_range$nextq) - 1),
-                    page)    
+                    page)
       )
 }
 
