@@ -23,7 +23,7 @@ library(shinysurveys)
 setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 # Read in JSON file -------------------------------------------------------
-dat <- jsonlite::fromJSON("../questions.json", flatten = TRUE) %>%
+dat <- jsonlite::fromJSON("https://raw.githubusercontent.com/summerscope/summer-child/main/questions.json", flatten = TRUE) %>%
   mutate(qn_text = text, .keep = "unused")
 
 dat_long <- dat %>% 
@@ -46,8 +46,7 @@ survey_qns <- dat_long %>%
          required = TRUE,
          dependence = NA,
          dependence_value = NA,
-        # page = str_extract(question, "Section #[0-9]+"),
-         page = input_id,
+         page = str_extract(question, "Section #[0-9]+"),
          .keep = "unused") %>%
   fill(page) %>% as.data.frame()
 
@@ -76,10 +75,7 @@ for (qn in sort(unique(depend$input_id), decreasing = FALSE)){
                           dependence),
       dependence_value = ifelse(input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1))),
                                 next_option,
-                                dependence_value),
-      page = ifelse((input_id %in% paste0("Q", min(question_range$nextq):(max(question_range$nextq - 1)))) & (page == input_id),
-                    paste0("Q", min(question_range$nextq) - 1),
-                    page)    
+                                dependence_value)
       )
 }
 
@@ -87,7 +83,8 @@ for (qn in sort(unique(depend$input_id), decreasing = FALSE)){
 ui <- fluidPage(
   surveyOutput(df = survey_qns,
                survey_title = "Sweet Summer Child Score (SSCS)",
-               survey_description = "SSCS is a scoring mechanism for latent risk. It will help you quickly and efficiently scan for the possibility of harm to people and communities by a socio-technical system. Note that harms to animals and the environment are not considered.")
+               survey_description = "SSCS is a scoring mechanism for latent risk. It will help you quickly and efficiently scan for the possibility of harm to people and communities by a socio-technical system. Note that harms to animals and the environment are not considered.
+               Please note that all questions are mandatory and you will not be able to submit the survey if there are questions left uncompleted.")
 )
 
 server <- function(input, output, session) {
