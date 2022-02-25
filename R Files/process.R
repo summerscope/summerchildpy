@@ -61,7 +61,7 @@ dependencies <- survey_qns %>%
   select(input_id, option, nextq)
 
 # assign dependencies
-for (qn in sort(unique(depend$input_id), decreasing = FALSE)){
+for (qn in sort(unique(dependencies$input_id), decreasing = FALSE)){
   question_range <- dependencies %>% 
     filter(input_id == qn) %>% 
     mutate(nextq = as.numeric(str_extract(nextq, "([0-9]+)")))
@@ -94,6 +94,16 @@ server <- function(input, output, session) {
       title = "Congrats, you completed your first shinysurvey!",
       "You can customize what actions happen when a user finishes a survey using input$submit."
     ))
+    response_data <- getSurveyData()
+    print(response_data %>% 
+            left_join(survey_qns,
+                      by = c("question_id" = "input_id", 
+                             "response" = "option"  )) %>%
+            select(question_id, multiplier, score) %>% 
+            summarise(risk = sum(multiplier, na.rm = TRUE) * sum(score, na.rm = T)) %>%
+            pull(risk) %>% 
+            cat()
+    )
   })
 }
 
