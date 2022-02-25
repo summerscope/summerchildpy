@@ -61,15 +61,9 @@ dependencies <- survey_qns %>%
   select(input_id, option, nextq)
 
 # assign dependencies
-<<<<<<< HEAD
 for (qn in sort(unique(dependencies$input_id), decreasing = FALSE)){
   question_range <- dependencies %>% 
     filter(input_id == qn) %>% 
-=======
-for (qn in sort(unique(depend$input_id), decreasing = FALSE)){
-  question_range <- dependencies %>%
-    filter(input_id == qn) %>%
->>>>>>> 12975c5fde5731fe46b062da27e7abb720e82569
     mutate(nextq = as.numeric(str_extract(nextq, "([0-9]+)")))
   next_option <- question_range %>%
     filter(nextq == min(nextq)) %>%
