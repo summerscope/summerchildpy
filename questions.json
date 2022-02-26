@@ -650,7 +650,7 @@
       "No": {
         "text": "No",
         "score": 6,
-        "recommendation": "Right to review \n Improve your risk score by allowing the target cohort to flag questions or concerns related to the automated decision. Plan for support use-cases, and allow time to engage with their concerns.",
+        "recommendation": "Plan for failure \n Improve your risk score by allowing the target cohort to flag questions and concerns, and to request a human review of their decision. Make a plan for how you will conduct decision review. Think through which scenarios will justify a change and which ones won't and work through how to explain these outcomes clearly.",
         "nextq": "Q29"
       }
     }
