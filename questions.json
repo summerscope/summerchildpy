@@ -6,6 +6,7 @@
       "Ok": {
         "text": "Ok",
         "score": "",
+        "recommendation": "",
         "nextq": "Q2"
       }
     }
@@ -16,37 +17,44 @@
     "answers": {
       "A": {
         "text": "1-100",
-        "multiplier": 0.52,
+        "multiplier": 0.52,        
+        "recommendation": "",
         "nextq": "Q3"
       },
       "B": {
         "text": "101-1,000",
-        "multiplier": 0.75,
+        "multiplier": 0.75,        
+        "recommendation": "",
         "nextq": "Q3"
       },
       "C": {
         "text": "1,001-10,000",
-        "multiplier": 0.85,
+        "multiplier": 0.85,        
+        "recommendation": "Try it with fewer people, first. \n You could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       },
       "D": {
         "text": "10,001-100,000",
         "multiplier": 0.95,
+        "recommendation": "Try it with fewer people, first. \n You could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       },
       "E": {
         "text": "100,001-1,000,000",
-        "multiplier": 0.96,
+        "multiplier": 0.96,        
+        "recommendation": "Try it with fewer people, first. \n You could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       },
       "F": {
         "text": "1,000,001-10,000,000",
         "multiplier": 0.98,
+        "recommendation": "Try it with fewer people, first. \n You could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       },
       "G": {
         "text": "10 million +",
         "multiplier": 1.0,
+        "recommendation": "Try it with fewer people, first. \n You could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       }
     }
@@ -58,36 +66,43 @@
       "A": {
         "text": "Rural/Remote",
         "multiplier": "",
+        "recommendation": "",
         "nextq": "Q4"
       },
       "B": {
         "text": "Small-Medium Town",
         "multiplier": "",
+        "recommendation": "",
         "nextq": "Q4"
       },
       "C": {
         "text": "Large Town - City",
         "multiplier": "",
-        "nextq": "Q4"
+        "recommendation": "",
+        "nextq": "Q4"        
       },
       "D": {
         "text": "State",
         "multiplier": "",
+        "recommendation": "",
         "nextq": "Q4"
       },
       "E": {
         "text": "National",
         "multiplier": "",
+        "recommendation": "",
         "nextq": "Q4"
       },
       "F": {
         "text": "2-3 Countries",
         "multiplier": "",
+        "recommendation": "",
         "nextq": "Q4"
       },
       "G": {
         "text": "Global",
         "multiplier": "",
+        "recommendation": "",
         "nextq": "Q4"
       }
     }    
@@ -99,6 +114,7 @@
       "Ok": {
         "text": "Ok",
         "score": "",
+        "recommendation": "",
         "nextq": "Q5"
       }
     }
@@ -110,26 +126,31 @@
       "A": {
         "text": "Top 10% of earners",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q6"
       },
       "B": {
         "text": "Less vulnerable than average",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q6"
       },
       "C": {
         "text": "Average",
         "score": 3,
+        "recommendation": "",
         "nextq": "Q6"
       },
       "D": {
         "text": "More vulnerable than average",
         "score": 6,
+        "recommendation": "",
         "nextq": "Q6"
       },
       "E": {
         "text": "Bottom 10% of earners",
         "score": 8,
+        "recommendation": "",
         "nextq": "Q6"
       }
     }
@@ -141,26 +162,31 @@
       "A": {
         "text": "Very robust",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q7"
       },
       "B": {
         "text": "Less vulnerable than average",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q7"
       },
       "C": {
         "text": "Average",
         "score": 2,
+        "recommendation": "",
         "nextq": "Q7"
       },
       "D": {
         "text": "More vulnerable than average",
         "score": 3,
+        "recommendation": "",
         "nextq": "Q7"
       },
       "E": {
         "text": "Extremely vulnerable",
         "score": 5,
+        "recommendation": "",
         "nextq": "Q7"
       }
     }
@@ -172,26 +198,31 @@
       "A": {
         "text": "Not vulnerable",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q8"
       },
       "B": {
         "text": "Less vulnerable than average",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q8"
       },
       "C": {
         "text": "Average",
         "score": 2,
+        "recommendation": "",
         "nextq": "Q8"
       },
       "D": {
         "text": "More vulnerable than average",
         "score": 3,
+        "recommendation": "",
         "nextq": "Q8"
       },
       "E": {
         "text": "Extremely vulnerable",
         "score": 5,
+        "recommendation": "",
         "nextq": "Q8"
       }
     }
@@ -203,26 +234,31 @@
       "A": {
         "text": "Very unlikely",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q9"
       },
       "B": {
         "text": "Less likely than average",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q9"
       },
       "C": {
         "text": "Average",
         "score": 2,
+        "recommendation": "",
         "nextq": "Q9"
       },
       "D": {
         "text": "More likely than average",
         "score": 3,
+        "recommendation": "",
         "nextq": "Q9"
       },
       "E": {
         "text": "Extremely likely",
         "score": 5,
+        "recommendation": "",
         "nextq": "Q9"
       }
     }
@@ -234,26 +270,31 @@
       "A": {
         "text": "Top 10% of computer users",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q10"
       },
       "B": {
         "text": "More confident than average",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q10"
       },
       "C": {
         "text": "Average",
         "score": 2,
+        "recommendation": "",
         "nextq": "Q10"
       },
       "D": {
         "text": "Less confident than average",
         "score": 3,
+        "recommendation": "",
         "nextq": "Q10"
       },
       "E": {
         "text": "Bottom 10% of computer users",
         "score": 5,
+        "recommendation": "",
         "nextq": "Q10"
       }
     }
@@ -265,26 +306,31 @@
       "A": {
         "text": "Top 10%",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q11"
       },
       "B": {
         "text": "Better access than average",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q11"
       },
       "C": {
         "text": "Average access",
         "score": 2,
+        "recommendation": "",
         "nextq": "Q11"
       },
       "D": {
         "text": "Worse access than average",
         "score": 3,
+        "recommendation": "",
         "nextq": "Q11"
       },
       "E": {
         "text": "Bottom 10%",
         "score": 5,
+        "recommendation": "",
         "nextq": "Q11"
       }
     }
@@ -296,6 +342,7 @@
       "Ok": {
         "text": "Ok",
         "score": "",
+        "recommendation": "",
         "nextq": "Q12"
       }
     }
@@ -307,26 +354,31 @@
       "A": {
         "text": "Effective monopoly or government service",
         "score": 5,
+        "recommendation": "",
         "nextq": "Q13"
       },
       "B": {
         "text": "1 competitor",
         "score": 4,
+        "recommendation": "",
         "nextq": "Q13"
       },
       "C": {
         "text": "2 competitors",
         "score": 3,
+        "recommendation": "",
         "nextq": "Q13"
       },
       "D": {
         "text": "3-4 competitors",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q13"
       },
       "E": {
         "text": "5+ competitors",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q13"
       }
     }
@@ -338,11 +390,13 @@
       "A": {
         "text": "Mandatory",
         "score": 4,
+        "recommendation": "",
         "nextq": "Q18"
       },
       "B": {
         "text": "Optional",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q14"
       }
     }
@@ -354,11 +408,13 @@
       "A": {
         "text": "Opt-in",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q18"
       },
       "B": {
         "text": "Opt-out",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q15"
       }
     }
@@ -370,26 +426,31 @@
       "A": {
         "text": "Very hard to find",
         "score": 3,
+        "recommendation": "System visibility \n If your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q16"
       },
       "B": {
         "text": "Somewhat hard to find",
         "score": 2,
+        "recommendation": "System visibility \n If your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q16"
       },
       "C": {
         "text": "Average",
         "score": 1,
+        "recommendation": "System visibility \n If your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q16"
       },
       "D": {
         "text": "Discoverable",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q16"
       },
       "E": {
         "text": "Very discoverable",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q16"
       }
     }
@@ -401,26 +462,31 @@
       "A": {
         "text": "Very difficult",
         "score": 3,
+        "recommendation": "System usability \n If your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q17"
       },
       "B": {
         "text": "Somewhat difficult",
         "score": 2,
+        "recommendation": "System usability \n If your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q17"
       },
       "C": {
         "text": "Average",
         "score": 1,
+        "recommendation": "System usability \n If your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q17"
       },
       "D": {
         "text": "Straight forward",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q17"
       },
       "E": {
         "text": "Very easy",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q17"
       }
     }
@@ -432,16 +498,19 @@
       "A": {
         "text": "Lasts forever",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q18"
       },
       "B": {
         "text": "Lasts forever (but periodically asked to opt in)",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q18"
       },
       "C": {
         "text": "Reset periodically",
         "score": 2,
+        "recommendation": "System visibility \n If the target cohort is added back into the system automatically, you must alert them to the fact and and allow them to opt-out easily through the same interface.",
         "nextq": "Q18"
       }
     }
@@ -453,11 +522,13 @@
       "Yes": {
         "text": "Yes",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q19"
       },
       "No": {
         "text": "No",
         "score": 3,
+        "recommendation": "Graceful degredation. \n Add a feature flag or other automation process that allows you to turn it off in production, if issues arise. Consider, for example, building a simple business logic version as a fall-back, to keep the system running.",
         "nextq": "Q19"
       }
     }
@@ -469,6 +540,7 @@
       "Yes": {
         "text": "Yes",
         "score": 3,
+        "recommendation": "Phone a (human friend). \n Consider looping in a person where the machine confidence is low, or when production data changes significantly.",
         "nextq": "Q20"
       },
       "No": {
@@ -490,13 +562,14 @@
       "No": {
         "text": "No",
         "score": 3,
+        "recommendation": "System auditability. \n For system decisions or classifications, especially high stakes ones, provide a record of the system decison (email, PDF, text message, etc), including a unique ID that can be traced in your system log.",
         "nextq": "Q21"
       }
     }
   },
   {
     "id": "Q21",
-    "text": "Does your decision system collect meaningful consent, including a clear explanation of the uses of data and ramifications of providing consent? \n Note if your consent request is tokenistic, confusing or deliberately misleading you should answer No",
+    "text": "Does your decision system request meaningful consent, including a clear explanation of the uses of data and ramifications of providing consent? \n Note if your consent request is tokenistic, confusing or deliberately misleading you should answer No",
       "answers": {
       "Yes": {
         "text": "Yes",
@@ -506,45 +579,50 @@
       "No": {
         "text": "No",
         "score": 5,
-        "nextq": "Q22"
+        "recommendation": "GDPR \n It is crucial to ensure that people are willing and informed participants in the system. A good consent request is clear, interpretable and contextual.",
+        "nextq": "Q23"
       }
     }
   },
   {
     "id": "Q22",
-    "text": "Does your decision system collect meaningful consent, including a clear explanation of the uses of data and ramifications of providing consent? \n Note if your consent request is tokenistic, confusing or deliberately misleading you should answer No",
-      "answers": {
-      "Yes": {
-        "text": "Yes",
-        "score": 0,
-        "nextq": "Q23"
-      },
-      "No": {
-        "text": "No",
-        "score": 5,
-        "nextq": "Q25"
-      }
-    }
-  },
-  {
-    "id": "Q23",
     "text": " Have you performed user testing to assess the usability of your consent section?",
       "answers": {
       "Yes": {
         "text": "Yes",
         "score": 0,
+        "recommendation": "",
+        "nextq": "Q23"
+      },
+      "No": {
+        "text": "No",
+        "score": 2,
+        "recommendation": "System usability \n User testing on the text and presentation of your consent request can significantly improve usability and interpretability.",
+        "nextq": "Q23"
+      }
+    }
+  },
+  {
+    "id": "Q23",
+    "text": "Do you provide a mechanism to allow individuals to revoke consent to use their data?",
+      "answers": {
+      "Yes": {
+        "text": "Yes",
+        "score": 0,
+        "recommendation": "",
         "nextq": "Q24"
       },
       "No": {
         "text": "No",
         "score": 2,
+        "recommendation": "GDPR compliance \n Allow target cohort to revoke consent to use their data. If they can do this but only within a fixed timeline, make sure that timeline is communicated in the interface.",
         "nextq": "Q24"
       }
     }
   },
   {
     "id": "Q24",
-    "text": "Do you provide a mechanism to allow individuals to revoke consent to use their data?",
+    "text": "Do you provide any visual or text-based explanation of your automated system decision on the decision interface? \n This could be in the form of displaying results for similar candidates, or identifying which feature had a strong impact on their outcome.",
       "answers": {
       "Yes": {
         "text": "Yes",
@@ -554,135 +632,177 @@
       "No": {
         "text": "No",
         "score": 2,
+        "recommendation": "System transparency \n Add decision explanations to help your target cohort understand the system. Consider highlighting features which contributed to the result, and exposing system confidence or uncertainty, especially for high-stakes predictions.",
         "nextq": "Q25"
       }
     }
   },
   {
     "id": "Q25",
-    "text": "Do you provide a mechanism to allow individuals to revoke consent to use their data?",
+    "text": "Can your target cohort request a decision review? \n If they don't understand or agree with the automated decision, is there an existing channel or feedback mechanism for them to request explanation? Are explanations planned and available (e.g. you've designed or planned for them before they are requested)? Note this doesn't include generic feedback mechanisms.",
       "answers": {
       "Yes": {
         "text": "Yes",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q26"
       },
       "No": {
         "text": "No",
-        "score": 2,
-        "nextq": "Q26"
+        "score": 6,
+        "recommendation": "Right to review \n Improve your risk score by allowing the target cohort to flag questions or concerns related to the automated decision. Plan for support use-cases, and allow time to engage with their concerns.",
+        "nextq": "Q29"
       }
     }
   },
   {
     "id": "Q26",
-    "text": "Do you provide any visual or text-based explanation of your automated system decision on the decision interface? \n This could be in the form of displaying results for similar candidates, or identifying which feature had a strong impact on their outcome.",
+    "text": "What is the probability that decision review will reverse or change the decision?",
       "answers": {
-      "Yes": {
-        "text": "Yes",
-        "score": 0,
-        "nextq": "Q28"
-      },
-      "No": {
-        "text": "No",
+      "A": {
+        "text": "Unlikely",
         "score": 2,
+        "recommendation": "",
+        "nextq": "Q27"
+      },
+      "B": {
+        "text": "No different than chance",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q27"
+      },
+      "C": {
+        "text": "Likely",
+        "score": 0,
+        "recommendation": "",
         "nextq": "Q27"
       }
     }
   },
   {
     "id": "Q27",
-    "text": "Can your target cohort request an explanation of the decision they received? \n If they don't understand or agree with the automated decision, is there an existing channel or feedback mechanism for them to request explanation? Are explanations planned and available (e.g. you've designed or planned for them before they are requested)? Note this doesn't include generic feedback mechanisms.",
+    "text": "On-average how much effort is required by your target cohort to lodge a request for decision review?",
       "answers": {
-      "Yes": {
-        "text": "Yes",
-        "score": 0,
+      "A": {
+        "text": "1-2 hours",
+        "score": 2,
+        "recommendation": "",
         "nextq": "Q28"
       },
-      "No": {
-        "text": "No",
+      "B": {
+        "text": "1 day",
         "score": 1,
+        "recommendation": "Decison review \n Requiring a significant effort to reverse a system decision risks further harm. Try to simplify up the decision review process.",
+        "nextq": "Q28"
+      },
+      "C": {
+        "text": "Longer",
+        "score": 0,
+        "recommendation": "Decison review \n Requiring a significant effort to reverse a system decision risks further harm. Try to simplify the decision review process.",
         "nextq": "Q28"
       }
     }
   },
   {
     "id": "Q28",
-    "text": "What is the probability that decision review will reverse or change the decision?",
+    "text": "On-average how long will your decision review process take?",
       "answers": {
       "A": {
-        "text": "Unlikely",
-        "score": 2,
+        "text": "Instantaneous (machine review)",
+        "score": 0,
+        "recommendation": "",
         "nextq": "Q29"
       },
       "B": {
-        "text": "No different than chance",
+        "text": "1 business day",
         "score": 1,
+        "recommendation": "Decison review \n Making people wait a significant period of time to reverse a system decision risks further harm. Speed up the decision review process to improve your scoe.",
         "nextq": "Q29"
       },
       "C": {
-        "text": "Likely",
-        "score": 0,
+        "text": "Longer",
+        "score": 2,
+        "recommendation": "Decison review \n Making people wait a significant period of time to reverse a system decision risks further harm. Speed up the decision review process to improve your score.",
         "nextq": "Q29"
       }
     }
   },
   {
     "id": "Q29",
-    "text": "On-average how much effort is required by your target cohort to lodge a request for decision review?",
-      "answers": {
-      "A": {
-        "text": "1-2 hours",
-        "score": 2,
-        "nextq": "Q30"
-      },
-      "B": {
-        "text": "1 day",
-        "score": 1,
-        "nextq": "Q30"
-      },
-      "C": {
-        "text": "Longer",
-        "score": 0,
+    "text": "Section #3 - Maslov's Hierarchy of needs. \n Slightly updated for the modern era. For this section, we compare the likelihood of harm with no intervention (if your decision system didn't exist) to the likelihood of this harm occurring as a result of your intervention. So if your target cohort are all drinking toxic water and your system reduces the number of people getting toxic water, you're reducing the probability of this harm because of the high base rate. \n  To continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": "",
         "nextq": "Q30"
       }
     }
   },
   {
     "id": "Q30",
-    "text": "On-average how long will your decision review process take?",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Physiological needs? \n (Air, water, food, shelter, sleep, reproduction)",
       "answers": {
       "A": {
-        "text": "Instantaneous (machine review)",
-        "score": 2,
+        "text": "10% Very unlikely",
+        "score": 0,
         "nextq": "Q31"
       },
       "B": {
-        "text": "1 business day",
+        "text": "33% Unlikely",
         "score": 1,
         "nextq": "Q31"
       },
       "C": {
-        "text": "Longer",
-        "score": 0,
+        "text": "50% (no different than chance)",
+        "score": 3,
+        "nextq": "Q31"
+      },
+      "D": {
+        "text": "66% Likely",
+        "score": 6,
+        "nextq": "Q31"
+      },
+      "E": {
+        "text": "90% Very likely",
+        "score": 8,
         "nextq": "Q31"
       }
     }
   },
   {
     "id": "Q31",
-    "text": "Section #3 - Maslov's Hierarchy of needs. \n Slightly updated for the modern era. For this section, we compare the likelihood of harm with no intervention (if your decision system didn't exist) to the likelihood of this harm occurring as a result of your intervention. So if your target cohort are all drinking toxic water and your system reduces the number of people getting toxic water, you're reducing the probability of this harm because of the high base rate. \n  To continue, type 'Ok'",
-    "answers": {
-      "Ok": {
-        "text": "Ok",
-        "score": "",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Safety needs? \n (Personal security, employment, resources, health, property, internet access, information access, information security)",
+      "answers": {
+      "A": {
+        "text": "10% Very unlikely",
+        "score": 0,
+        "nextq": "Q32"
+      },
+      "B": {
+        "text": "33% Unlikely",
+        "score": 1,
+        "nextq": "Q32"
+      },
+      "C": {
+        "text": "50% (no different than chance)",
+        "score": 2,
+        "nextq": "Q32"
+      },
+      "D": {
+        "text": "66% Likely",
+        "score": 4,
+        "nextq": "Q32"
+      },
+      "E": {
+        "text": "90% Very likely",
+        "score": 7,
         "nextq": "Q32"
       }
     }
   },
   {
     "id": "Q32",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Physiological needs? \n (Air, water, food, shelter, sleep, reproduction)",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Love and belonging needs? \n (Friendship, intimacy, family, sense of connection, access to online communities)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -696,24 +816,24 @@
       },
       "C": {
         "text": "50% (no different than chance)",
-        "score": 3,
+        "score": 2,
         "nextq": "Q33"
       },
       "D": {
         "text": "66% Likely",
-        "score": 6,
+        "score": 4,
         "nextq": "Q33"
       },
       "E": {
         "text": "90% Very likely",
-        "score": 8,
+        "score": 6,
         "nextq": "Q33"
       }
     }
   },
   {
     "id": "Q33",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Safety needs? \n (Personal security, employment, resources, health, property, internet access, information access, information security)",
+    "text": " What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Esteem needs? \n (Respect, self-esteem, status, recognition, strength, freedom)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -737,75 +857,13 @@
       },
       "E": {
         "text": "90% Very likely",
-        "score": 7,
+        "score": 6,
         "nextq": "Q34"
       }
     }
   },
   {
     "id": "Q34",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Love and belonging needs? \n (Friendship, intimacy, family, sense of connection, access to online communities)",
-      "answers": {
-      "A": {
-        "text": "10% Very unlikely",
-        "score": 0,
-        "nextq": "Q35"
-      },
-      "B": {
-        "text": "33% Unlikely",
-        "score": 1,
-        "nextq": "Q35"
-      },
-      "C": {
-        "text": "50% (no different than chance)",
-        "score": 2,
-        "nextq": "Q35"
-      },
-      "D": {
-        "text": "66% Likely",
-        "score": 4,
-        "nextq": "Q35"
-      },
-      "E": {
-        "text": "90% Very likely",
-        "score": 6,
-        "nextq": "Q35"
-      }
-    }
-  },
-  {
-    "id": "Q35",
-    "text": " What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Esteem needs? \n (Respect, self-esteem, status, recognition, strength, freedom)",
-      "answers": {
-      "A": {
-        "text": "10% Very unlikely",
-        "score": 0,
-        "nextq": "Q36"
-      },
-      "B": {
-        "text": "33% Unlikely",
-        "score": 1,
-        "nextq": "Q36"
-      },
-      "C": {
-        "text": "50% (no different than chance)",
-        "score": 2,
-        "nextq": "Q36"
-      },
-      "D": {
-        "text": "66% Likely",
-        "score": 4,
-        "nextq": "Q36"
-      },
-      "E": {
-        "text": "90% Very likely",
-        "score": 6,
-        "nextq": "Q36"
-      }
-    }
-  },
-  {
-    "id": "Q36",
     "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Self-actualisation needs? \n (Desire to become the most one can be)",
       "answers": {
       "A": {
