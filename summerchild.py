@@ -11,7 +11,7 @@ data = json.load(io)
 
 State = collections.namedtuple('State', ['multiplier', 'score', 'currentq', 'recommendations'])
 
-start_state = State(multiplier = 0, score = 0, currentq = "Q1", recommendations = [])
+start_state = State(multiplier = 1, score = 0, currentq = "Q1", recommendations = [])
 
 def print_question(text, answers, answer_set, score):
   print(text)
@@ -45,18 +45,24 @@ def format_question(question):
 
 def update_state(state, answer):
   new_state = state._replace(
-    score = state.score + answer["score"],
+    multiplier = answer.get("multiplier", state.multiplier),
+    score = state.score + answer.get("score", 0),
     currentq = answer["nextq"],
     recommendations = state.recommendations +  [answer["recommendation"]] 
-    )
+  )
   return new_state
 
 def ask_question(question, state):
   answer = format_question(question)
+  new_state = update_state(state, answer)
+  return new_state
 
+# format_question(data[1])
 
+print(start_state)
+next_state = ask_question(data[1], start_state)
+print(next_state)
 
-format_question(data[1])
 
 
 # validate_answer('How large is the target cohort for your decision system? \nThe people your system makes decisions, predictions or classifications about.', 'A. 1-100 \nB. 101-1,000 \nC. 1,001 - 10,000', ['A', 'B', 'C'], 0)
