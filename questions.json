@@ -5,7 +5,7 @@
     "answers": {
       "Ok": {
         "text": "Ok",
-        "score": "",
+        "score": 0,
         "recommendation": "",
         "nextq": "Q2"
       }
@@ -113,7 +113,7 @@
     "answers": {
       "Ok": {
         "text": "Ok",
-        "score": "",
+        "score": 0,
         "recommendation": "",
         "nextq": "Q5"
       }
@@ -341,7 +341,7 @@
     "answers": {
       "Ok": {
         "text": "Ok",
-        "score": "",
+        "score": 0,
         "recommendation": "",
         "nextq": "Q12"
       }
@@ -733,7 +733,7 @@
     "answers": {
       "Ok": {
         "text": "Ok",
-        "score": "",
+        "score": 0,
         "nextq": "Q30"
       }
     }
