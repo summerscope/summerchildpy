@@ -3,6 +3,7 @@
 from cgitb import lookup
 import json
 import collections
+from typing import final
 from wsgiref import validate
 io = open("questions.json", "r")
 
@@ -66,20 +67,44 @@ def lookup_question(data, id):
       return question
   raise KeyError(f"{id} was not found")
 
-def print_summary(state):
+def parse_range(range_str):
+  s1, s2 = range_str.split("-")
+  x1 = int(s1)
+  x2 = int(s2)
+  return x1, x2
+
+def print_summary(data, state):
   # print(state)
   final_score = (state.multiplier * state.score)
-  print(f"Your score is {final_score}")
+  print(f"Your final score is {state.score} and your multiplier is {state.multiplier}")
+  print(f"Your sweet summer child score is {final_score}")
+  results_all = lookup_question(data, "Results")
+  for k,range_obj in results_all["results"].items():
+    range = range_obj["range"]
+    title = range_obj["title"]
+    text = range_obj["text"]
+    low, high = parse_range(range)
+    if final_score >= low and final_score <= high:
+      print(f"{range}\n{title}\n{text}")
+  print("Recommendations for improving your score:")
+  for rec in state.recommendations:
+    if rec != "":
+      print(f"• {rec}")
+  if len(state.recommendations) == 0:
+    print("No recommendations to improve your score.")
 
 def run_quiz(data, state):
   while state.currentq and state.currentq != "":
     question = lookup_question(data, state.currentq)
     state = ask_question(question, state)
-  print_summary(state)
+  print_summary(data, state)
 
 # format_question(data[1])
 
+# run_quiz(data, start_state)
+
 run_quiz(data, start_state._replace(currentq = "Q24"))
+
 
 # print(start_state)
 # next_state = ask_question(data[0], start_state)
