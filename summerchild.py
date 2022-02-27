@@ -14,7 +14,7 @@ State = collections.namedtuple('State', ['multiplier', 'score', 'currentq', 'rec
 start_state = State(multiplier = 1, score = 0, currentq = "Q1", recommendations = [])
 
 def print_question(text, answers, answer_set):
-  print('\n' + text)
+  print(f"\n{text}")
   print(answers)
   x = input()
   uppercase_input = x.upper()
@@ -23,7 +23,7 @@ def print_question(text, answers, answer_set):
       # print('You selected ' + x)
       return answer
   # This is what happens if input is invalid
-  print('\n⚠️  Sorry '+ x +' is not a valid answer, please try again  ⚠️\n')
+  print(f"\n⚠️  Sorry {x} is not a valid answer, please try again  ⚠️")
   return None
 
 def validate_answer(text, answers, answer_set):
@@ -38,7 +38,8 @@ def format_question(question):
   answers = question["answers"]
   answer_list = []
   for key,value in answers.items():
-    answer_list.append(key + ') ' + value["text"])
+    answer_text = value["text"]
+    answer_list.append(f"{key}) {answer_text}")
   answers_joined = "\n".join(answer_list)
   # print (answers_joined)
   # print (text)
@@ -63,10 +64,12 @@ def lookup_question(data, id):
   for question in data: 
     if question["id"] == id:
       return question
-  raise KeyError(id + "was not found")
+  raise KeyError(f"{id} was not found")
 
 def print_summary(state):
-  print(state)
+  # print(state)
+  final_score = (state.multiplier * state.score)
+  print(f"Your score is {final_score}")
 
 def run_quiz(data, state):
   while state.currentq and state.currentq != "":
@@ -76,7 +79,7 @@ def run_quiz(data, state):
 
 # format_question(data[1])
 
-run_quiz(data, start_state._replace(currentq = "Q18"))
+run_quiz(data, start_state._replace(currentq = "Q24"))
 
 # print(start_state)
 # next_state = ask_question(data[0], start_state)
