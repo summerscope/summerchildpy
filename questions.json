@@ -1,7 +1,7 @@
 [
   {
     "id": "Q1",
-    "text": "Section #0 - Multiplier. \nTo continue, type 'Ok'",
+    "text": "Section #0 - Multiplier.\nTo continue, type 'Ok'",
     "answers": {
       "Ok": {
         "text": "Ok",
@@ -13,7 +13,7 @@
   },
   {
     "id": "Q2",
-    "text": "How large is the target cohort for your decision system? \nThese are the people your system makes decisions, predictions or classifications about.",
+    "text": "How large is the target cohort for your decision system?\nThese are the people your system makes decisions, predictions or classifications about.",
     "answers": {
       "A": {
         "text": "1-100",
@@ -30,31 +30,31 @@
       "C": {
         "text": "1,001-10,000",
         "multiplier": 0.85,        
-        "recommendation": "Try it with fewer people, first. \nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       },
       "D": {
         "text": "10,001-100,000",
         "multiplier": 0.95,
-        "recommendation": "Try it with fewer people, first. \nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       },
       "E": {
         "text": "100,001-1,000,000",
         "multiplier": 0.96,        
-        "recommendation": "Try it with fewer people, first. \nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       },
       "F": {
         "text": "1,000,001-10,000,000",
         "multiplier": 0.98,
-        "recommendation": "Try it with fewer people, first. \nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       },
       "G": {
         "text": "10 million +",
         "multiplier": 1.0,
-        "recommendation": "Try it with fewer people, first. \nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
         "nextq": "Q3"
       }
     }
@@ -109,7 +109,7 @@
   },
   {
     "id": "Q4",
-    "text": "Section #1 - Cohort scan. \nTo continue, type 'Ok'",
+    "text": "Section #1 - Cohort scan.\nTo continue, type 'Ok'",
     "answers": {
       "Ok": {
         "text": "Ok",
@@ -121,7 +121,7 @@
   },
   {
     "id": "Q5",
-    "text": "Is your target cohort economically vulnerable? \nLook at average earning rates of your country if you aren't sure where your demographic sits overall.",
+    "text": "Is your target cohort economically vulnerable?\nLook at average earning rates of your country if you aren't sure where your demographic sits overall.",
     "answers": {
       "A": {
         "text": "Top 10% of earners",
@@ -157,7 +157,7 @@
   },
   {
     "id": "Q6",
-    "text": "Is your target cohort psychologically vulnerable? \nAre they likely to suffer from mental health issues, self-harm, or to have their capacity to work, study, or pursue their goals impacted by debilitating mental illness?",
+    "text": "Is your target cohort psychologically vulnerable?\nAre they likely to suffer from mental health issues, self-harm, or to have their capacity to work, study, or pursue their goals impacted by debilitating mental illness?",
     "answers": {
       "A": {
         "text": "Very robust",
@@ -193,7 +193,7 @@
   },
   {
     "id": "Q7",
-    "text": "Is your target cohort vulnerable to coercive control? \nConsider parents controlling LGBTQI children. Jaime Spears. Elder abuse. Intimate partner abuse. Technological coercion or control.",
+    "text": "Is your target cohort vulnerable to coercive control?\nConsider parents controlling LGBTQI children. Jaime Spears. Elder abuse. Intimate partner abuse. Technological coercion or control.",
     "answers": {
       "A": {
         "text": "Not vulnerable",
@@ -229,7 +229,7 @@
   },
   {
     "id": "Q8",
-    "text": "Is your target cohort over-policed or over-surveilled? \nAre they more likely than the average population in any aspect of their lives to be targeted by police, social services or surveillance systems?",
+    "text": "Is your target cohort over-policed or over-surveilled?\nAre they more likely than the average population in any aspect of their lives to be targeted by police, social services or surveillance systems?",
     "answers": {
       "A": {
         "text": "Very unlikely",
@@ -265,7 +265,7 @@
   },
   {
     "id": "Q9",
-    "text": "Is your target cohort technologically vulnerable? \nWill they have more difficulty navigating technological systems than average? Poor digital literacy? Do they have a higher rate of visual impairments or other disabilities which would compound this?",
+    "text": "Is your target cohort technologically vulnerable?\nWill they have more difficulty navigating technological systems than average? Poor digital literacy? Do they have a higher rate of visual impairments or other disabilities which would compound this?",
     "answers": {
       "A": {
         "text": "Top 10% of computer users",
@@ -301,7 +301,7 @@
   },
   {
     "id": "Q10",
-    "text": "Does your target cohort have robust internet access? \nIs your target cohort in a remote area with poor infrastructure? Exposed to download or over-limit fees? Access on 1 or more devices? Internet sharing or have own service? Physically at-risk if they try to access public internet? Are they accessing the internet from cellular networks, NBN, ADSL, Broadband, other?",
+    "text": "Does your target cohort have robust internet access?\nIs your target cohort in a remote area with poor infrastructure? Exposed to download or over-limit fees? Access on 1 or more devices? Internet sharing or have own service? Physically at-risk if they try to access public internet? Are they accessing the internet from cellular networks, NBN, ADSL, Broadband, other?",
     "answers": {
       "A": {
         "text": "Top 10%",
@@ -337,7 +337,7 @@
   },
   {
     "id": "Q11",
-    "text": "Section #2 - System scan. \nTo continue, type 'Ok'",
+    "text": "Section #2 - System scan.\nTo continue, type 'Ok'",
     "answers": {
       "Ok": {
         "text": "Ok",
@@ -385,7 +385,7 @@
   },
   {
     "id": "Q13",
-    "text": "Is your decision system mandatory or optional? \nMandatory systems will be mostly government applications; paying taxes, rent, complying with judicial hearings or prison sentences, etc.",
+    "text": "Is your decision system mandatory or optional?\nMandatory systems will be mostly government applications; paying taxes, rent, complying with judicial hearings or prison sentences, etc.",
     "answers": {
       "A": {
         "text": "Mandatory",
@@ -403,7 +403,7 @@
   },
   {
     "id": "Q14",
-    "text": "Is your decision system opt-in or opt-out? \nDoes the target cohort actively choose to participate or add themselves? Or are they included by default and have to actively remove themselves?",
+    "text": "Is your decision system opt-in or opt-out?\nDoes the target cohort actively choose to participate or add themselves? Or are they included by default and have to actively remove themselves?",
     "answers": {
       "A": {
         "text": "Opt-in",
@@ -421,24 +421,24 @@
   },
   {
     "id": "Q15",
-    "text": "How visible or discoverable is it that the target cohort has been opted-into the system? \nDo you notify them, is the operation of your system visible, or do they have to find it in a setting or lodge their own query?",
+    "text": "How visible or discoverable is it that the target cohort has been opted-into the system?\nDo you notify them, is the operation of your system visible, or do they have to find it in a setting or lodge their own query?",
     "answers": {
       "A": {
         "text": "Very hard to find",
         "score": 3,
-        "recommendation": "System visibility \nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
+        "recommendation": "System visibility\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q16"
       },
       "B": {
         "text": "Somewhat hard to find",
         "score": 2,
-        "recommendation": "System visibility \nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
+        "recommendation": "System visibility\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q16"
       },
       "C": {
         "text": "Average",
         "score": 1,
-        "recommendation": "System visibility \nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
+        "recommendation": "System visibility\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q16"
       },
       "D": {
@@ -462,19 +462,19 @@
       "A": {
         "text": "Very difficult",
         "score": 3,
-        "recommendation": "System usability \nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
+        "recommendation": "System usability\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q17"
       },
       "B": {
         "text": "Somewhat difficult",
         "score": 2,
-        "recommendation": "System usability \nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
+        "recommendation": "System usability\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q17"
       },
       "C": {
         "text": "Average",
         "score": 1,
-        "recommendation": "System usability \nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
+        "recommendation": "System usability\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q17"
       },
       "D": {
@@ -493,7 +493,7 @@
   },
   {
     "id": "Q17",
-    "text": "How perpetual is opting out? \nDoes the user preference remain for system upgrades or migrations, normal use, etc?",
+    "text": "How perpetual is opting out?\nDoes the user preference remain for system upgrades or migrations, normal use, etc?",
     "answers": {
       "A": {
         "text": "Lasts forever",
@@ -510,14 +510,14 @@
       "C": {
         "text": "Reset periodically",
         "score": 2,
-        "recommendation": "System visibility \nIf the target cohort is added back into the system automatically, you must alert them to the fact and and allow them to opt-out easily through the same interface.",
+        "recommendation": "System visibility\nIf the target cohort is added back into the system automatically, you must alert them to the fact and and allow them to opt-out easily through the same interface.",
         "nextq": "Q18"
       }
     }
   },
   {
     "id": "Q18",
-    "text": "Can you turn your decision system off instantly if something goes wrong? \nCan you do this with one click, or do you have to deploy code to take it down?",
+    "text": "Can you turn your decision system off instantly if something goes wrong?\nCan you do this with one click, or do you have to deploy code to take it down?",
       "answers": {
       "Yes": {
         "text": "Yes",
@@ -528,7 +528,7 @@
       "No": {
         "text": "No",
         "score": 3,
-        "recommendation": "Graceful degredation. \nAdd a feature flag or other automation process that allows you to turn it off in production, if issues arise. Consider, for example, building a simple business logic version as a fall-back, to keep the system running.",
+        "recommendation": "Graceful degredation.\nAdd a feature flag or other automation process that allows you to turn it off in production, if issues arise. Consider, for example, building a simple business logic version as a fall-back, to keep the system running.",
         "nextq": "Q19"
       }
     }
@@ -540,7 +540,7 @@
       "Yes": {
         "text": "Yes",
         "score": 3,
-        "recommendation": "Phone a (human friend). \nConsider looping in a person where the machine confidence is low, or when production data changes significantly.",
+        "recommendation": "Phone a (human friend).\nConsider looping in a person where the machine confidence is low, or when production data changes significantly.",
         "nextq": "Q20"
       },
       "No": {
@@ -553,7 +553,7 @@
   },
   {
     "id": "Q20",
-    "text": "Do you provide a record of the system decision for individuals, including a unique ID that can be traced in your system log? \nFor their reference and for looking up that decision later on. This could be on-screen, email, PDF, etc.",
+    "text": "Do you provide a record of the system decision for individuals, including a unique ID that can be traced in your system log?\nFor their reference and for looking up that decision later on. This could be on-screen, email, PDF, etc.",
       "answers": {
       "Yes": {
         "text": "Yes",
@@ -564,14 +564,14 @@
       "No": {
         "text": "No",
         "score": 3,
-        "recommendation": "System auditability. \nFor system decisions or classifications, especially high stakes ones, provide a record of the system decison (email, PDF, text message, etc), including a unique ID that can be traced in your system log.",
+        "recommendation": "System auditability.\nFor system decisions or classifications, especially high stakes ones, provide a record of the system decison (email, PDF, text message, etc), including a unique ID that can be traced in your system log.",
         "nextq": "Q21"
       }
     }
   },
   {
     "id": "Q21",
-    "text": "Does your decision system request meaningful consent, including a clear explanation of the uses of data and ramifications of providing consent? \nNote if your consent request is tokenistic, confusing or deliberately misleading you should answer No",
+    "text": "Does your decision system request meaningful consent, including a clear explanation of the uses of data and ramifications of providing consent?\nNote if your consent request is tokenistic, confusing or deliberately misleading you should answer No",
       "answers": {
       "Yes": {
         "text": "Yes",
@@ -582,7 +582,7 @@
       "No": {
         "text": "No",
         "score": 5,
-        "recommendation": "GDPR \nIt is crucial to ensure that people are willing and informed participants in the system. A good consent request is clear, interpretable and contextual.",
+        "recommendation": "GDPR\nIt is crucial to ensure that people are willing and informed participants in the system. A good consent request is clear, interpretable and contextual.",
         "nextq": "Q23"
       }
     }
@@ -600,7 +600,7 @@
       "No": {
         "text": "No",
         "score": 2,
-        "recommendation": "System usability \nUser testing on the text and presentation of your consent request can significantly improve usability and interpretability.",
+        "recommendation": "System usability\nUser testing on the text and presentation of your consent request can significantly improve usability and interpretability.",
         "nextq": "Q23"
       }
     }
@@ -618,14 +618,14 @@
       "No": {
         "text": "No",
         "score": 2,
-        "recommendation": "GDPR compliance \nAllow target cohort to revoke consent to use their data. If they can do this but only within a fixed timeline, make sure that timeline is communicated in the interface.",
+        "recommendation": "GDPR compliance\nAllow target cohort to revoke consent to use their data. If they can do this but only within a fixed timeline, make sure that timeline is communicated in the interface.",
         "nextq": "Q24"
       }
     }
   },
   {
     "id": "Q24",
-    "text": "Do you provide any visual or text-based explanation of your automated system decision on the decision interface? \nThis could be in the form of displaying results for similar candidates, or identifying which feature had a strong impact on their outcome.",
+    "text": "Do you provide any visual or text-based explanation of your automated system decision on the decision interface?\nThis could be in the form of displaying results for similar candidates, or identifying which feature had a strong impact on their outcome.",
       "answers": {
       "Yes": {
         "text": "Yes",
@@ -636,14 +636,14 @@
       "No": {
         "text": "No",
         "score": 2,
-        "recommendation": "System transparency \nAdd decision explanations to help your target cohort understand the system. Consider highlighting features which contributed to the result, and exposing system confidence or uncertainty, especially for high-stakes predictions.",
+        "recommendation": "System transparency\nAdd decision explanations to help your target cohort understand the system. Consider highlighting features which contributed to the result, and exposing system confidence or uncertainty, especially for high-stakes predictions.",
         "nextq": "Q25"
       }
     }
   },
   {
     "id": "Q25",
-    "text": "Can your target cohort request a decision review? \nIf they don't understand or agree with the automated decision, is there an existing channel or feedback mechanism for them to request explanation? Are explanations planned and available (e.g. you've designed or planned for them before they are requested)? Note this doesn't include generic feedback mechanisms.",
+    "text": "Can your target cohort request a decision review?\nIf they don't understand or agree with the automated decision, is there an existing channel or feedback mechanism for them to request explanation? Are explanations planned and available (e.g. you've designed or planned for them before they are requested)? Note this doesn't include generic feedback mechanisms.",
       "answers": {
       "Yes": {
         "text": "Yes",
@@ -654,7 +654,7 @@
       "No": {
         "text": "No",
         "score": 6,
-        "recommendation": "Plan for failure \nImprove your risk score by allowing the target cohort to flag questions and concerns, and to request a human review of their decision. Make a plan for how you will conduct decision review. Think through which scenarios will justify a change and which ones won't and work through how to explain these outcomes clearly.",
+        "recommendation": "Plan for failure\nImprove your risk score by allowing the target cohort to flag questions and concerns, and to request a human review of their decision. Make a plan for how you will conduct decision review. Think through which scenarios will justify a change and which ones won't and work through how to explain these outcomes clearly.",
         "nextq": "Q29"
       }
     }
@@ -696,13 +696,13 @@
       "B": {
         "text": "1 day",
         "score": 1,
-        "recommendation": "Decison review \nRequiring a significant effort to reverse a system decision risks further harm. Try to simplify up the decision review process.",
+        "recommendation": "Decison review\nRequiring a significant effort to reverse a system decision risks further harm. Try to simplify up the decision review process.",
         "nextq": "Q28"
       },
       "C": {
         "text": "Longer",
         "score": 0,
-        "recommendation": "Decison review \nRequiring a significant effort to reverse a system decision risks further harm. Try to simplify the decision review process.",
+        "recommendation": "Decison review\nRequiring a significant effort to reverse a system decision risks further harm. Try to simplify the decision review process.",
         "nextq": "Q28"
       }
     }
@@ -720,20 +720,20 @@
       "B": {
         "text": "1 business day",
         "score": 1,
-        "recommendation": "Decison review \nMaking people wait a significant period of time to reverse a system decision risks further harm. Speed up the decision review process to improve your score.",
+        "recommendation": "Decison review\nMaking people wait a significant period of time to reverse a system decision risks further harm. Speed up the decision review process to improve your score.",
         "nextq": "Q29"
       },
       "C": {
         "text": "Longer",
         "score": 2,
-        "recommendation": "Decison review \nMaking people wait a significant period of time to reverse a system decision risks further harm. Speed up the decision review process to improve your score.",
+        "recommendation": "Decison review\nMaking people wait a significant period of time to reverse a system decision risks further harm. Speed up the decision review process to improve your score.",
         "nextq": "Q29"
       }
     }
   },
   {
     "id": "Q29",
-    "text": "Section #3 - Maslov's Hierarchy of needs. \nSlightly updated for the modern era. For this section, we compare the likelihood of harm with no intervention (if your decision system didn't exist) to the likelihood of this harm occurring as a result of your intervention. So if your target cohort are all drinking toxic water and your system reduces the number of people getting toxic water, you're reducing the probability of this harm because of the high base rate. \nTo continue, type 'Ok'",
+    "text": "Section #3 - Maslov's Hierarchy of needs.\nSlightly updated for the modern era. For this section, we compare the likelihood of harm with no intervention (if your decision system didn't exist) to the likelihood of this harm occurring as a result of your intervention. So if your target cohort are all drinking toxic water and your system reduces the number of people getting toxic water, you're reducing the probability of this harm because of the high base rate.\nTo continue, type 'Ok'",
     "answers": {
       "Ok": {
         "text": "Ok",
@@ -745,7 +745,7 @@
   },
   {
     "id": "Q30",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Physiological needs? \n(Air, water, food, shelter, sleep, reproduction)",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Physiological needs?\n(Air, water, food, shelter, sleep, reproduction)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -781,7 +781,7 @@
   },
   {
     "id": "Q31",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Safety needs? \n(Personal security, employment, resources, health, property, internet access, information access, information security)",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Safety needs?\n(Personal security, employment, resources, health, property, internet access, information access, information security)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -817,7 +817,7 @@
   },
   {
     "id": "Q32",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Love and belonging needs? \n(Friendship, intimacy, family, sense of connection, access to online communities)",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Love and belonging needs?\n(Friendship, intimacy, family, sense of connection, access to online communities)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -853,7 +853,7 @@
   },
   {
     "id": "Q33",
-    "text": " What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Esteem needs? \n(Respect, self-esteem, status, recognition, strength, freedom)",
+    "text": " What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Esteem needs?\n(Respect, self-esteem, status, recognition, strength, freedom)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -889,7 +889,7 @@
   },
   {
     "id": "Q34",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Self-actualisation needs? \n(Desire to become the most one can be)",
+    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Self-actualisation needs?\n(Desire to become the most one can be)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
