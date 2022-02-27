@@ -15,8 +15,8 @@ State = collections.namedtuple('State', ['multiplier', 'score', 'currentq', 'rec
 start_state = State(multiplier = 1, score = 0, currentq = "Q1", recommendations = [])
 
 def print_question(text, answers, answer_set):
-  print(f"\n{text}")
-  print(answers)
+  print(f"\n-----------------\n{text}\n-----------------\n")
+  print(f"{answers}\n")
   x = input()
   uppercase_input = x.upper()
   for answer in answer_set:
