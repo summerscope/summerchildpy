@@ -17,9 +17,10 @@ def print_question(text, answers, answer_set, score):
   print(text)
   print(answers)
   x = input()
-  if x.upper() in answer_set:
-    print('You selected ' + x)
-    return x 
+  uppercase_input = x.upper()
+  if uppercase_input in answer_set:
+    print('You selected ' + x)    
+    return uppercase_input
   else:
     print('Sorry '+ x +' is not a valid answer, please try again')
     return None
@@ -60,7 +61,7 @@ def ask_question(question, state):
 # format_question(data[1])
 
 print(start_state)
-next_state = ask_question(data[1], start_state)
+next_state = ask_question(data[0], start_state)
 print(next_state)
 
 
