@@ -99,17 +99,12 @@ def run_quiz(data, state):
     state = ask_question(question, state)
   print_summary(data, state)
 
-# format_question(data[1])
 
-# run_quiz(data, start_state)
+run_quiz(data, start_state)
 
-run_quiz(data, start_state._replace(currentq = "Q24"))
-
-
+# run_quiz(data, start_state._replace(currentq = "Q24"))
 # print(start_state)
+# format_question(data[1])
 # next_state = ask_question(data[0], start_state)
 # print(next_state)
-
-
-
 # validate_answer('How large is the target cohort for your decision system? \nThe people your system makes decisions, predictions or classifications about.', 'A. 1-100 \nB. 101-1,000 \nC. 1,001 - 10,000', ['A', 'B', 'C'], 0)
