@@ -3,7 +3,7 @@
     "id": "Q1",
     "text": "Section #0 - Multiplier. \nTo continue, type 'Ok'",
     "answers": {
-      "OK": {
+      "Ok": {
         "text": "Ok",
         "score": 0,
         "recommendation": "",
@@ -111,7 +111,7 @@
     "id": "Q4",
     "text": "Section #1 - Cohort scan. \nTo continue, type 'Ok'",
     "answers": {
-      "OK": {
+      "Ok": {
         "text": "Ok",
         "score": 0,
         "recommendation": "",
@@ -339,7 +339,7 @@
     "id": "Q11",
     "text": "Section #2 - System scan. \nTo continue, type 'Ok'",
     "answers": {
-      "OK": {
+      "Ok": {
         "text": "Ok",
         "score": 0,
         "recommendation": "",
@@ -735,7 +735,7 @@
     "id": "Q29",
     "text": "Section #3 - Maslov's Hierarchy of needs. \nSlightly updated for the modern era. For this section, we compare the likelihood of harm with no intervention (if your decision system didn't exist) to the likelihood of this harm occurring as a result of your intervention. So if your target cohort are all drinking toxic water and your system reduces the number of people getting toxic water, you're reducing the probability of this harm because of the high base rate. \nTo continue, type 'Ok'",
     "answers": {
-      "OK": {
+      "Ok": {
         "text": "Ok",
         "score": 0,
         "recommendation": "",
