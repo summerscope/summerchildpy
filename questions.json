@@ -546,6 +546,7 @@
       "No": {
         "text": "No",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q20"
       }
     }
@@ -557,6 +558,7 @@
       "Yes": {
         "text": "Yes",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q21"
       },
       "No": {
