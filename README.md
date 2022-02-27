@@ -1,16 +1,18 @@
 # Sweet summer child score
 _Risk assessment quiz for automation and ML_
 
-## Run it
+## Run the quiz
 **Requirements**   
 - Python3+ installed
 - Can use a terminal to clone a repo and navigate around directories (native or your own client) 
 
 **Instructions**  
 - Open your terminal 
-- Clone https://github.com/summerscope/summerchildpy locally `$ git clone git@github.com:summerscope/summerchildpy.git`
+- Clone https://github.com/summerscope/summerchildpy locally 
+`$ git clone git@github.com:summerscope/summerchildpy.git`
 - CD to inside the repo (wherever you cloned it locally) 
-- Run script with python `python3 summerchild.py`
+- Run script with python 
+`$python3 summerchild.py`
 - Questions should appear now on your terminal
 
 ---------------------------------------
