@@ -1,7 +1,7 @@
 # Sweet summer child score
 _Risk assessment quiz for automation and ML_
 
-## Run the quiz
+## Run the quiz in python
 **Requirements**   
 - Python3+ installed
 - Can use a terminal to clone a repo and navigate around directories (native or your own client) 
@@ -14,6 +14,15 @@ _Risk assessment quiz for automation and ML_
 - Run script with python 
 `$python3 summerchild.py`
 - Questions should appear now on your terminal
+
+## Run the quiz in google colab
+**Requirements**   
+- Google account
+
+**Instructions**  
+- Navigate to [https://colab.research.google.com/drive/1LG__62nsr_KuNzOwKMULy3GbV9KFCM1Q?usp=sharing](https://colab.research.google.com/drive/1LG__62nsr_KuNzOwKMULy3GbV9KFCM1Q?usp=sharing)  
+- Press the play button on the first cell
+- Questions should appear
 
 ---------------------------------------
 
