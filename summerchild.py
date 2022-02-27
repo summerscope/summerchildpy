@@ -91,7 +91,7 @@ def print_summary(data, state):
     if rec != "":
       print(f"• {rec}")
   if len(state.recommendations) == 0:
-    print("No recommendations to improve your score.")
+    print("No recommendations at this stage")
 
 def run_quiz(data, state):
   while state.currentq and state.currentq != "":

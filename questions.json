@@ -65,43 +65,36 @@
     "answers": {
       "A": {
         "text": "Rural/Remote",
-        "multiplier": "",
         "recommendation": "",
         "nextq": "Q4"
       },
       "B": {
         "text": "Small-Medium Town",
-        "multiplier": "",
         "recommendation": "",
         "nextq": "Q4"
       },
       "C": {
         "text": "Large Town - City",
-        "multiplier": "",
         "recommendation": "",
         "nextq": "Q4"        
       },
       "D": {
         "text": "State",
-        "multiplier": "",
         "recommendation": "",
         "nextq": "Q4"
       },
       "E": {
         "text": "National",
-        "multiplier": "",
         "recommendation": "",
         "nextq": "Q4"
       },
       "F": {
         "text": "2-3 Countries",
-        "multiplier": "",
         "recommendation": "",
         "nextq": "Q4"
       },
       "G": {
         "text": "Global",
-        "multiplier": "",
         "recommendation": "",
         "nextq": "Q4"
       }
