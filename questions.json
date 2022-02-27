@@ -574,6 +574,7 @@
       "Yes": {
         "text": "Yes",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q22"
       },
       "No": {
@@ -627,6 +628,7 @@
       "Yes": {
         "text": "Yes",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q25"
       },
       "No": {
@@ -734,6 +736,7 @@
       "Ok": {
         "text": "Ok",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q30"
       }
     }
@@ -745,26 +748,31 @@
       "A": {
         "text": "10% Very unlikely",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q31"
       },
       "B": {
         "text": "33% Unlikely",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q31"
       },
       "C": {
         "text": "50% (no different than chance)",
         "score": 3,
+        "recommendation": "",
         "nextq": "Q31"
       },
       "D": {
         "text": "66% Likely",
         "score": 6,
+        "recommendation": "",
         "nextq": "Q31"
       },
       "E": {
         "text": "90% Very likely",
         "score": 8,
+        "recommendation": "",
         "nextq": "Q31"
       }
     }
@@ -776,26 +784,31 @@
       "A": {
         "text": "10% Very unlikely",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q32"
       },
       "B": {
         "text": "33% Unlikely",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q32"
       },
       "C": {
         "text": "50% (no different than chance)",
         "score": 2,
+        "recommendation": "",
         "nextq": "Q32"
       },
       "D": {
         "text": "66% Likely",
         "score": 4,
+        "recommendation": "",
         "nextq": "Q32"
       },
       "E": {
         "text": "90% Very likely",
         "score": 7,
+        "recommendation": "",
         "nextq": "Q32"
       }
     }
@@ -807,26 +820,31 @@
       "A": {
         "text": "10% Very unlikely",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q33"
       },
       "B": {
         "text": "33% Unlikely",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q33"
       },
       "C": {
         "text": "50% (no different than chance)",
         "score": 2,
+        "recommendation": "",
         "nextq": "Q33"
       },
       "D": {
         "text": "66% Likely",
         "score": 4,
+        "recommendation": "",
         "nextq": "Q33"
       },
       "E": {
         "text": "90% Very likely",
         "score": 6,
+        "recommendation": "",
         "nextq": "Q33"
       }
     }
@@ -838,26 +856,31 @@
       "A": {
         "text": "10% Very unlikely",
         "score": 0,
+        "recommendation": "",
         "nextq": "Q34"
       },
       "B": {
         "text": "33% Unlikely",
         "score": 1,
+        "recommendation": "",
         "nextq": "Q34"
       },
       "C": {
         "text": "50% (no different than chance)",
         "score": 2,
+        "recommendation": "",
         "nextq": "Q34"
       },
       "D": {
         "text": "66% Likely",
         "score": 4,
+        "recommendation": "",
         "nextq": "Q34"
       },
       "E": {
         "text": "90% Very likely",
         "score": 6,
+        "recommendation": "",
         "nextq": "Q34"
       }
     }
@@ -869,26 +892,31 @@
       "A": {
         "text": "10% Very unlikely",
         "score": 0,
+        "recommendation": "",
         "nextq": ""
       },
       "B": {
         "text": "33% Unlikely",
         "score": 1,
+        "recommendation": "",
         "nextq": ""
       },
       "C": {
         "text": "50% (no different than chance)",
         "score": 2,
+        "recommendation": "",
         "nextq": ""
       },
       "D": {
         "text": "66% Likely",
         "score": 3,
+        "recommendation": "",
         "nextq": ""
       },
       "E": {
         "text": "90% Very likely",
         "score": 4,
+        "recommendation": "",
         "nextq": ""
       }
     }
