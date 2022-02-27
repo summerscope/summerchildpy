@@ -922,5 +922,35 @@
         "nextq": ""
       }
     }
+  },
+  {
+    "id": "Results",
+    "results": {
+      "T1": {
+        "range": "0-20",
+        "title": "The white walkers",
+        "text": "This territory belongs to the undead. Turn around! Don't venture here, where packs of spiders roam. You will harm people and almost certainly won't be able unpick those harms."
+      },
+      "T2": {
+        "range": "21-40",
+        "title": "Fields of thorns",
+        "text": "This path is paved with dangers and misery, and the long night casts it's shadow on this quest. There might be ways to win, but they'll be risky. Can you reinforce your troups, or find another path?"
+      },
+      "T3": {
+        "range": "41-60",
+        "title": "Winter is coming",
+        "text": "What do you know of fear? You may not have felt the bite of winter's sting, but all the more reason to plan for it's hardships."
+      },
+      "T4": {
+        "range": "61-80",
+        "title": "The stronghold",
+        "text": "You're shoring up your castle walls - but there are still plenty of opportunities to stumble and impale yourself, or someone else."
+      },
+      "T5": {
+        "range": "81-99",
+        "title": "Castles in the sky",
+        "text": "You've found the highest ground of all! You're working on a problem space with a surprisingly low risk of harm! Don't become complacent, though."
+      }
+    }
   }
 ]
