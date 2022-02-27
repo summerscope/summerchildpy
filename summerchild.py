@@ -14,13 +14,13 @@ State = collections.namedtuple('State', ['multiplier', 'score', 'currentq', 'rec
 start_state = State(multiplier = 1, score = 0, currentq = "Q1", recommendations = [])
 
 def print_question(text, answers, answer_set):
-  print(text)
+  print('\n' + text)
   print(answers)
   x = input()
   uppercase_input = x.upper()
   for answer in answer_set:
     if answer.upper() == uppercase_input:
-      print('You selected ' + x)    
+      # print('You selected ' + x)
       return answer
   # This is what happens if input is invalid
   print('\n⚠️  Sorry '+ x +' is not a valid answer, please try again  ⚠️\n')
