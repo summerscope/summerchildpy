@@ -60,7 +60,7 @@ def update_state(state, answer):
 def ask_question(question, state):
   answer = format_question(question)
   new_state = update_state(state, answer)
-  print(new_state)
+  # print(new_state)
   return new_state
 
 def lookup_question(data, id):
@@ -79,7 +79,7 @@ def print_summary(data, state):
   # print(state)
   final_score = (99 - (state.multiplier * state.score))
   # print(f"Your final score is {state.score} and your multiplier is {state.multiplier}")
-  print(f"\n-----------------\nYour sweet summer child score is \n{final_score}\n-----------------\n")
+  print(f"\n-----------------\nYour sweet summer child score is \n{final_score} / 99\n-----------------\n")
   results_all = lookup_question(data, "Results")
   for k,range_obj in results_all["results"].items():
     range = range_obj["range"]
