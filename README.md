@@ -18,6 +18,8 @@ _Risk assessment quiz for automation and ML_
 - Questions should appear now on your terminal
 
 ## Run the quiz in google colab
+_CURRENTLY BROKEN - hopefully fixed up in a few hours_
+
 **Requirements**   
 - Google account
 
