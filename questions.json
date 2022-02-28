@@ -382,7 +382,7 @@
     "answers": {
       "A": {
         "text": "Mandatory",
-        "score": 4,
+        "score": 6,
         "recommendation": "",
         "nextq": "Q18"
       },
@@ -868,13 +868,13 @@
       },
       "D": {
         "text": "66% Likely",
-        "score": 4,
+        "score": 3,
         "recommendation": "",
         "nextq": "Q34"
       },
       "E": {
         "text": "90% Very likely",
-        "score": 6,
+        "score": 5,
         "recommendation": "",
         "nextq": "Q34"
       }
