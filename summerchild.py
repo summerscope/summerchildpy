@@ -79,7 +79,7 @@ def print_summary(data, state):
   # print(state)
   final_score = (99 - (state.multiplier * state.score))
   # print(f"Your final score is {state.score} and your multiplier is {state.multiplier}")
-  print(f"\n-----------------\nYour sweet summer child score is \n{final_score} / 99\n-----------------\n")
+  print(f"\n-----------------\nYour sweet summer child score is \n{final_score}\n Out of a possible 99 points\n-----------------\n")
   results_all = lookup_question(data, "Results")
   for k,range_obj in results_all["results"].items():
     range = range_obj["range"]
