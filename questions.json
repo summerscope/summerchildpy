@@ -1,7 +1,7 @@
 [
   {
     "id": "Q1",
-    "text": "Section #0 - Multiplier.\nTo continue, type 'Ok'",
+    "text": "Section #0 - Multiplier.\nThe multiplier is a value which impacts your overall score, to reflect the number of people impacted by your system.\nTo continue, type 'Ok'",
     "answers": {
       "Ok": {
         "text": "Ok",
@@ -13,7 +13,7 @@
   },
   {
     "id": "Q2",
-    "text": "How large is the target cohort for your decision system?\nThese are the people your system makes decisions, predictions or classifications about.",
+    "text": "How large is the target cohort for your decision system?\nThese are the people your system makes decisions, predictions or classifications about. Include the entire population, not the subset of people who might receive an unfavorable or harmful result.",
     "answers": {
       "A": {
         "text": "1-100",
@@ -102,7 +102,7 @@
   },
   {
     "id": "Q4",
-    "text": "Section #1 - Cohort scan.\nTo continue, type 'Ok'",
+    "text": "Section #1 - Cohort scan.\nEstimates the relative vulnerability of your target cohort.\nTo continue, type 'Ok'",
     "answers": {
       "Ok": {
         "text": "Ok",
@@ -330,7 +330,7 @@
   },
   {
     "id": "Q11",
-    "text": "Section #2 - System scan.\nTo continue, type 'Ok'",
+    "text": "Section #2 - System scan.\nEstimates the resiliance of your system and it's ability to observe and recover from failure cases.\nTo continue, type 'Ok'",
     "answers": {
       "Ok": {
         "text": "Ok",
@@ -342,7 +342,7 @@
   },
   {
     "id": "Q12",
-    "text": "Does your decision system operate as part of a competitive marketplace, or are you the only provider of the specific service, platform, resource or goods? Looking for viable alternatives. Competitors need to be known to your target cohort. Consider network effects, brand visibility, feature parity, etc. If competitors exist but consumers can't find them, or if the cost of adoption is very high, select 'effective monopoly'.",
+    "text": "Does your decision system operate as part of a competitive marketplace, or are you the only provider of the specific service, platform, resource or goods?\nConsider the viability and discoverability of alternatives or competitor systems. Consider network effects, brand visibility, feature parity, cost of adoption, etc.",
     "answers": {
       "A": {
         "text": "Effective monopoly or government service",
@@ -726,7 +726,7 @@
   },
   {
     "id": "Q29",
-    "text": "Section #3 - Maslov's Hierarchy of needs.\nSlightly updated for the modern era. For this section, we compare the likelihood of harm with no intervention (if your decision system didn't exist) to the likelihood of this harm occurring as a result of your intervention. So if your target cohort are all drinking toxic water and your system reduces the number of people getting toxic water, you're reducing the probability of this harm because of the high base rate.\nTo continue, type 'Ok'",
+    "text": "Section #3 - Maslov's Hierarchy of needs.\nSlightly updated for the modern era. Compares the likelihood of harm with no intervention (if your system didn't exist) to the likelihood of this harm occurring as a result of your intervention.\nSo if your target cohort are all drinking toxic water and your system reduces the number of people getting toxic water, you're reducing the probability of this harm because of the high base rate.\nTo continue, type 'Ok'",
     "answers": {
       "Ok": {
         "text": "Ok",

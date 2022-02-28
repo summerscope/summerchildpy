@@ -55,10 +55,12 @@ def update_state(state, answer):
     recommendations = state.recommendations +  [answer["recommendation"]] 
   )
   return new_state
+  
 
 def ask_question(question, state):
   answer = format_question(question)
   new_state = update_state(state, answer)
+  print(new_state)
   return new_state
 
 def lookup_question(data, id):
@@ -75,7 +77,7 @@ def parse_range(range_str):
 
 def print_summary(data, state):
   # print(state)
-  final_score = (state.multiplier * state.score)
+  final_score = (99 - (state.multiplier * state.score))
   # print(f"Your final score is {state.score} and your multiplier is {state.multiplier}")
   print(f"\n-----------------\nYour sweet summer child score is \n{final_score}\n-----------------\n")
   results_all = lookup_question(data, "Results")
@@ -85,7 +87,7 @@ def print_summary(data, state):
     text = range_obj["text"]
     low, high = parse_range(range)
     if final_score >= low and final_score <= high:
-      print(f"\n-----------------\{range}\n{title}\n{text}-----------------\n")
+      print(f"\n-----------------\n{range}\n{title}\n{text}\n-----------------\n")
   print("\nRecommendations for improving your score:\n-----------------\n")
   for rec in state.recommendations:
     if rec != "":
