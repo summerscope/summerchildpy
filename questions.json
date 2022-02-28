@@ -738,7 +738,7 @@
   },
   {
     "id": "Q30",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Physiological needs?\n(Air, water, food, shelter, sleep, reproduction)",
+    "text": "Physiological needs\nWhat's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Physiological needs? (Air, water, food, shelter, sleep, reproduction)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -774,7 +774,7 @@
   },
   {
     "id": "Q31",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Safety needs?\n(Personal security, employment, resources, health, property, internet access, information access, information security)",
+    "text": "Safety needs\nWhat's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Safety needs? (Personal security, employment, resources, health, property, internet access, information access, information security)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -810,7 +810,7 @@
   },
   {
     "id": "Q32",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Love and belonging needs?\n(Friendship, intimacy, family, sense of connection, access to online communities)",
+    "text": "Love and belonging needs\nWhat's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Love and belonging needs? (Friendship, intimacy, family, sense of connection, access to online communities)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -846,7 +846,7 @@
   },
   {
     "id": "Q33",
-    "text": " What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Esteem needs?\n(Respect, self-esteem, status, recognition, strength, freedom)",
+    "text": "Esteem needs\nWhat's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Esteem needs? (Respect, self-esteem, status, recognition, strength, freedom)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
@@ -882,7 +882,7 @@
   },
   {
     "id": "Q34",
-    "text": "What's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Self-actualisation needs?\n(Desire to become the most one can be)",
+    "text": "Self-actualisation needs?\nWhat's the probability that decisions, classifications, predictions or interventions from your automated decision system will directly, negatively impact your target cohort's Self-actualisation needs? (Desire to become the most one can be)",
       "answers": {
       "A": {
         "text": "10% Very unlikely",
