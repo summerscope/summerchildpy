@@ -1,10 +1,9 @@
 # Bash quiz of Sweet Summer Child Score 
 
-from cgitb import lookup
 import json
 import collections
-from typing import final
-from wsgiref import validate
+
+
 io = open("questions.json", "r")
 
 data = json.load(io)
