@@ -79,7 +79,7 @@ def print_summary(data, state):
   # print(state)
   final_score = (99 - (state.multiplier * state.score))
   # print(f"Your final score is {state.score} and your multiplier is {state.multiplier}")
-  print(f"\n-----------------\nYour sweet summer child score is \n{final_score}\n Out of a possible 99 points\n-----------------\n")
+  print(f"\n-----------------\nYour sweet summer child score is \n\n{final_score} / 99")
   results_all = lookup_question(data, "Results")
   for k,range_obj in results_all["results"].items():
     range = range_obj["range"]
@@ -88,7 +88,7 @@ def print_summary(data, state):
     low, high = parse_range(range)
     if final_score >= low and final_score <= high:
       print(f"\n-----------------\n{range}\n{title}\n{text}\n-----------------\n")
-  print("\nRecommendations for improving your score:\n-----------------\n")
+  print("\n-----------------\nRecommendations for improving your score:\n-----------------\n")
   for rec in state.recommendations:
     if rec != "":
       print(f"• {rec}\n")
