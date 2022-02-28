@@ -76,8 +76,8 @@ def parse_range(range_str):
 def print_summary(data, state):
   # print(state)
   final_score = (state.multiplier * state.score)
-  print(f"Your final score is {state.score} and your multiplier is {state.multiplier}")
-  print(f"Your sweet summer child score is {final_score}")
+  # print(f"Your final score is {state.score} and your multiplier is {state.multiplier}")
+  print(f"\n-----------------\nYour sweet summer child score is \n{final_score}\n-----------------\n")
   results_all = lookup_question(data, "Results")
   for k,range_obj in results_all["results"].items():
     range = range_obj["range"]
@@ -85,11 +85,11 @@ def print_summary(data, state):
     text = range_obj["text"]
     low, high = parse_range(range)
     if final_score >= low and final_score <= high:
-      print(f"{range}\n{title}\n{text}")
-  print("Recommendations for improving your score:")
+      print(f"\n-----------------\{range}\n{title}\n{text}-----------------\n")
+  print("\nRecommendations for improving your score:\n-----------------\n")
   for rec in state.recommendations:
     if rec != "":
-      print(f"• {rec}")
+      print(f"• {rec}\n")
   if len(state.recommendations) == 0:
     print("No recommendations at this stage")
 
@@ -98,7 +98,6 @@ def run_quiz(data, state):
     question = lookup_question(data, state.currentq)
     state = ask_question(question, state)
   print_summary(data, state)
-
 
 run_quiz(data, start_state)
 
