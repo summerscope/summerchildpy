@@ -24,6 +24,12 @@ _Risk assessment quiz for automation and ML_
 - Press the play button on the first cell
 - Questions should appear
 
+
+## Run the quiz in R
+
+See separate R repo with instructions at:  
+[https://github.com/summerscope/summerchildr](https://github.com/summerscope/summerchildr)  
+
 ---------------------------------------
 
 ### Overview
