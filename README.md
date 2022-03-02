@@ -33,6 +33,12 @@ _Risk assessment quiz for automation and ML_
 See separate R repo with instructions at:  
 [https://github.com/summerscope/summerchildr](https://github.com/summerscope/summerchildr)  
 
+
+## Run the quiz in Rust
+
+See separate R repo at: 
+[https://github.com/summerscope/summerchild-rs](https://github.com/summerscope/summerchild-rs)
+
 ---------------------------------------
 
 ### Overview
