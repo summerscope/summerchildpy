@@ -36,7 +36,7 @@ See separate R repo with instructions at:
 
 ## Run the quiz in Rust
 
-See separate R repo at: 
+See separate R repo at:   
 [https://github.com/summerscope/summerchild-rs](https://github.com/summerscope/summerchild-rs)
 
 ---------------------------------------
