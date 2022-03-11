@@ -1,6 +1,8 @@
 # Sweet summer child score
 _Risk assessment quiz for automation and ML_
 
+![summerchild](https://user-images.githubusercontent.com/6570564/157806846-0b8ffe60-a812-4b06-92d2-048cc45773a1.gif)
+
 ## Run the quiz in python
 **Requirements**   
 - Python3+ installed
