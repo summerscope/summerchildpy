@@ -382,7 +382,7 @@
     "answers": {
       "A": {
         "text": "Mandatory",
-        "score": 6,
+        "score": 8,
         "recommendation": "",
         "nextq": "Q18"
       },
@@ -414,35 +414,23 @@
   },
   {
     "id": "Q15",
-    "text": "How visible or discoverable is it that the target cohort has been opted-into the system?\nDo you notify them, is the operation of your system visible, or do they have to find it in a setting or lodge their own query?",
+    "text": "How visible or discoverable is it that the target cohort has been added to the system?\nDo you notify them, is the operation of your system visible, or do they have to find it in a setting or lodge their own query?",
     "answers": {
       "A": {
-        "text": "Very hard to find",
+        "text": "Hard to find",
         "score": 3,
         "recommendation": "System visibility\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q16"
       },
       "B": {
-        "text": "Somewhat hard to find",
+        "text": "Average",
         "score": 2,
         "recommendation": "System visibility\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q16"
       },
-      "C": {
-        "text": "Average",
-        "score": 1,
-        "recommendation": "System visibility\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
-        "nextq": "Q16"
-      },
-      "D": {
-        "text": "Discoverable",
-        "score": 0,
-        "recommendation": "",
-        "nextq": "Q16"
-      },
       "E": {
-        "text": "Very discoverable",
-        "score": 0,
+        "text": "Discoverable",
+        "score": 1,
         "recommendation": "",
         "nextq": "Q16"
       }
@@ -453,32 +441,20 @@
     "text": "How difficult is it to opt out?",
     "answers": {
       "A": {
-        "text": "Very difficult",
+        "text": "Difficult",
         "score": 3,
         "recommendation": "System usability\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q17"
       },
       "B": {
-        "text": "Somewhat difficult",
+        "text": "Average",
         "score": 2,
         "recommendation": "System usability\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
         "nextq": "Q17"
       },
       "C": {
-        "text": "Average",
+        "text": "Easy",
         "score": 1,
-        "recommendation": "System usability\nIf your target cohort is automatically opted into your system, you must ensure that this is clearly explained, and allow them to opt-out easily through the same interface.",
-        "nextq": "Q17"
-      },
-      "D": {
-        "text": "Straight forward",
-        "score": 0,
-        "recommendation": "",
-        "nextq": "Q17"
-      },
-      "E": {
-        "text": "Very easy",
-        "score": 0,
         "recommendation": "",
         "nextq": "Q17"
       }
@@ -610,7 +586,7 @@
       },
       "No": {
         "text": "No",
-        "score": 2,
+        "score": 3,
         "recommendation": "GDPR compliance\nAllow target cohort to revoke consent to use their data. If they can do this but only within a fixed timeline, make sure that timeline is communicated in the interface.",
         "nextq": "Q24"
       }
@@ -628,7 +604,7 @@
       },
       "No": {
         "text": "No",
-        "score": 2,
+        "score": 3,
         "recommendation": "System transparency\nAdd decision explanations to help your target cohort understand the system. Consider highlighting features which contributed to the result, and exposing system confidence or uncertainty, especially for high-stakes predictions.",
         "nextq": "Q25"
       }
@@ -682,7 +658,7 @@
       "answers": {
       "A": {
         "text": "1-2 hours",
-        "score": 2,
+        "score": 0,
         "recommendation": "",
         "nextq": "Q28"
       },
@@ -694,7 +670,7 @@
       },
       "C": {
         "text": "Longer",
-        "score": 0,
+        "score": 2,
         "recommendation": "Decison review\nRequiring a significant effort to reverse a system decision risks further harm. Try to simplify the decision review process.",
         "nextq": "Q28"
       }
