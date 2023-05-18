@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "summerchild_quiz"
+version = "0.9.0"
+authors = [
+    {name = "Laura Summers", email = "summerscope@gmail.com"},
+]
+description = "Sweet summer child score, a risk assessment quiz for automation and machine learning."
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["summerchild", "summer child", "quiz", "risk assessment", "ML", "machine learning"]
+license = {text = "AGPL-3.0-or-later"}
+classifiers = [
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+    "Classifier: Environment :: Console (Text Based)",
+]
+dependencies = []
+
+[project.urls]
+"Source" = "https://github.com/summerscope"
+"Bug Reports" = "https://github.com/summerscope/summerchildpy/issues"
+
+[project.scripts]
+summerchild_quiz = "summerchild:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+packages = ["summerchild"]
+package-data = {"summerchild" = ["questions.json"]}
+
