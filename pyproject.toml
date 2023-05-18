@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "summerchild_quiz"
+name = "summerchild"
 version = "0.9.0"
 authors = [
     {name = "Laura Summers", email = "summerscope@gmail.com"},
