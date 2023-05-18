@@ -2,18 +2,7 @@
 
 import json
 import collections
-
-
-if __name__ == "__main__":
-  io = open("questions.json", "r")
-  data = json.load(io)
-else:
-  import pkgutil
-  data_bytes = pkgutil.get_data(__name__, "questions.json")
-  if data_bytes:
-    data = json.loads(data_bytes)
-  else:
-    raise RuntimeError("could not load question data")
+import pkgutil
 
 
 State = collections.namedtuple('State', ['multiplier', 'score', 'currentq', 'recommendations'])
@@ -111,9 +100,15 @@ def run_quiz(data, state):
   print_summary(data, state)
 
 
+def load_data_from_package():
+  data_bytes = pkgutil.get_data(__name__, "questions.json")
+  if data_bytes:
+    data = json.loads(data_bytes)
+  else:
+    raise RuntimeError("could not load question data")
+  return data
+
+
 def main():
+  data = load_data_from_package()
   run_quiz(data, start_state)
-
-
-if __name__ == "__main__":
-  main()
