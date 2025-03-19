@@ -1,0 +1,692 @@
+[
+  {
+    "id": "Q1",
+    "text": "Section #0 - Multiplier.\nThe multiplier is a value which impacts your overall score, to reflect the number of people impacted by your GenAI/LLM system.\nTo continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q2"
+      }
+    }
+  },
+  {
+    "id": "Q2",
+    "text": "How large is the target cohort for your GenAI/LLM system?\nThese are the people who will interact with or be impacted by the outputs from your system. Include the entire potential user base, not just those who might experience negative outcomes.",
+    "answers": {
+      "A": {
+        "text": "1-100",
+        "multiplier": 0.52,        
+        "recommendation": "",
+        "nextq": "Q3"
+      },
+      "B": {
+        "text": "101-1,000",
+        "multiplier": 0.75,        
+        "recommendation": "",
+        "nextq": "Q3"
+      },
+      "C": {
+        "text": "1,001-10,000",
+        "multiplier": 0.85,        
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "nextq": "Q3"
+      },
+      "D": {
+        "text": "10,001-100,000",
+        "multiplier": 0.95,
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "nextq": "Q3"
+      },
+      "E": {
+        "text": "100,001-1,000,000",
+        "multiplier": 0.96,        
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "nextq": "Q3"
+      },
+      "F": {
+        "text": "1,000,001-10,000,000",
+        "multiplier": 0.98,
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "nextq": "Q3"
+      },
+      "G": {
+        "text": "10 million +",
+        "multiplier": 1.0,
+        "recommendation": "Try it with fewer people, first.\nYou could trial your system with a small target cohort (Beta release). Communicate extensively with the cohort. Observe what goes wrong. Be prepared to stop or intervene if things are going badly. You could also consider a staged roll-out of your system - break down your release rather than doing it all at once. Provide sufficient time between roll-out milestones to adjust and course-correct if unexpected issue crop up.",
+        "nextq": "Q3"
+      }
+    }
+  },
+  {
+    "id": "Q3",
+    "text": "Section #1 - Cohort scan.\nEstimates the relative vulnerability of your target cohort to risks specific to generative AI systems.\nTo continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q4"
+      }
+    }
+  },
+  {
+    "id": "Q4",
+    "text": "Is your target cohort economically vulnerable?\nLook at average earning rates of your country if you aren't sure where your demographic sits overall.",
+    "answers": {
+      "A": {
+        "text": "Top 10% of earners",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q5"
+      },
+      "B": {
+        "text": "Less vulnerable than average",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q5"
+      },
+      "C": {
+        "text": "Average",
+        "score": 3,
+        "recommendation": "",
+        "nextq": "Q5"
+      },
+      "D": {
+        "text": "More vulnerable than average",
+        "score": 6,
+        "recommendation": "",
+        "nextq": "Q5"
+      },
+      "E": {
+        "text": "Bottom 10% of earners",
+        "score": 8,
+        "recommendation": "",
+        "nextq": "Q5"
+      }
+    }
+  },
+  {
+    "id": "Q5",
+    "text": "Is your target cohort psychologically vulnerable?\nAre they likely to suffer from mental health issues or be susceptible to emotional manipulation? Consider risks of emotional attachment to AI systems or overreliance on AI for sensitive personal advice.",
+    "answers": {
+      "A": {
+        "text": "Very robust",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q6"
+      },
+      "B": {
+        "text": "Less vulnerable than average",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q6"
+      },
+      "C": {
+        "text": "Average",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q6"
+      },
+      "D": {
+        "text": "More vulnerable than average",
+        "score": 3,
+        "recommendation": "",
+        "nextq": "Q6"
+      },
+      "E": {
+        "text": "Extremely vulnerable",
+        "score": 5,
+        "recommendation": "",
+        "nextq": "Q6"
+      }
+    }
+  },
+  {
+    "id": "Q6",
+    "text": "Is your target cohort vulnerable to misinformation or manipulation?\nConsider their critical thinking skills, fact-checking tendencies, and susceptibility to believing persuasive but false information.",
+    "answers": {
+      "A": {
+        "text": "Very resistant to misinformation",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q7"
+      },
+      "B": {
+        "text": "More resistant than average",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q7"
+      },
+      "C": {
+        "text": "Average",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q7"
+      },
+      "D": {
+        "text": "More susceptible than average",
+        "score": 3,
+        "recommendation": "",
+        "nextq": "Q7"
+      },
+      "E": {
+        "text": "Highly susceptible to misinformation",
+        "score": 5,
+        "recommendation": "Consider implementing clear fact-checking mechanisms and confidence indicators for factual claims generated by your system.",
+        "nextq": "Q7"
+      }
+    }
+  },
+  {
+    "id": "Q7",
+    "text": "Does your target cohort face language or cultural barriers in using your GenAI system?\nConsider if your system primarily works in a language or cultural context that may disadvantage certain users.",
+    "answers": {
+      "A": {
+        "text": "No barriers at all",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q8"
+      },
+      "B": {
+        "text": "Minor barriers",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q8"
+      },
+      "C": {
+        "text": "Moderate barriers",
+        "score": 2,
+        "recommendation": "Consider offering multilingual support and cultural adaptations to make your system more accessible.",
+        "nextq": "Q8"
+      },
+      "D": {
+        "text": "Significant barriers",
+        "score": 3,
+        "recommendation": "Consider offering multilingual support and cultural adaptations to make your system more accessible.",
+        "nextq": "Q8"
+      },
+      "E": {
+        "text": "Extreme barriers",
+        "score": 5,
+        "recommendation": "Consider offering multilingual support and cultural adaptations to make your system more accessible.",
+        "nextq": "Q8"
+      }
+    }
+  },
+  {
+    "id": "Q8",
+    "text": "Is your target cohort technologically literate regarding AI systems?\nWill they understand how to effectively use generative AI, recognize its limitations, and interpret its outputs critically?",
+    "answers": {
+      "A": {
+        "text": "Top 10% of computer users",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q9"
+      },
+      "B": {
+        "text": "More confident than average",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q9"
+      },
+      "C": {
+        "text": "Average",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q9"
+      },
+      "D": {
+        "text": "Less confident than average",
+        "score": 3,
+        "recommendation": "",
+        "nextq": "Q9"
+      },
+      "E": {
+        "text": "Bottom 10% of computer users",
+        "score": 5,
+        "recommendation": "",
+        "nextq": "Q9"
+      }
+    }
+  },
+  {
+    "id": "Q9",
+    "text": "How likely is your target cohort to have the resources to verify or fact-check AI-generated information?\nConsider their access to alternative information sources, research skills, and time available to validate outputs.",
+    "answers": {
+      "A": {
+        "text": "Very high ability to verify",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q10"
+      },
+      "B": {
+        "text": "Better than average",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q10"
+      },
+      "C": {
+        "text": "Average ability",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q10"
+      },
+      "D": {
+        "text": "Below average ability",
+        "score": 3,
+        "recommendation": "Consider building in source citations and verification tools within your system.",
+        "nextq": "Q10"
+      },
+      "E": {
+        "text": "Very limited ability to verify",
+        "score": 5,
+        "recommendation": "Consider building in source citations and verification tools within your system.",
+        "nextq": "Q10"
+      }
+    }
+  },
+  {
+    "id": "Q10",
+    "text": "Section #2 - System scan.\nEvaluates the design and safeguards of your GenAI/LLM system and its ability to prevent, detect, and recover from failures.\nTo continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q11"
+      }
+    }
+  },
+  {
+    "id": "Q11",
+    "text": "Does your GenAI system operate as part of a competitive marketplace, or are you the only provider of this specific type of AI service?\nConsider the viability and discoverability of alternatives or competitor systems.",
+    "answers": {
+      "A": {
+        "text": "Effective monopoly or government service",
+        "score": 5,
+        "recommendation": "",
+        "nextq": "Q12"
+      },
+      "B": {
+        "text": "1 competitor",
+        "score": 4,
+        "recommendation": "",
+        "nextq": "Q12"
+      },
+      "C": {
+        "text": "2 competitors",
+        "score": 3,
+        "recommendation": "",
+        "nextq": "Q12"
+      },
+      "D": {
+        "text": "3-4 competitors",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q12"
+      },
+      "E": {
+        "text": "5+ competitors",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q12"
+      }
+    }
+  },
+  {
+    "id": "Q12",
+    "text": "What is the necessity level of your GenAI/LLM system for your target cohort?",
+    "answers": {
+      "A": {
+        "text": "Entertainment or nice-to-have",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q13"
+      },
+      "B": {
+        "text": "Productivity enhancement",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q13"
+      },
+      "C": {
+        "text": "Important decision support",
+        "score": 4,
+        "recommendation": "For systems supporting important decisions, consider implementing clear confidence indicators and explanation mechanisms.",
+        "nextq": "Q13"
+      },
+      "D": {
+        "text": "Essential service",
+        "score": 6,
+        "recommendation": "Essential services require robust backup systems and extensive testing across diverse scenarios.",
+        "nextq": "Q13"
+      },
+      "E": {
+        "text": "Critical infrastructure integration",
+        "score": 8,
+        "recommendation": "Critical infrastructure integration requires the highest standards of safety, with continuous monitoring and manual override capabilities.",
+        "nextq": "Q13"
+      }
+    }
+  },
+  {
+    "id": "Q13",
+    "text": "Have you thoroughly tested your system's outputs with diverse prompts and scenarios?",
+    "answers": {
+      "A": {
+        "text": "Extensive testing across many scenarios",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q14"
+      },
+      "B": {
+        "text": "Good testing coverage",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q14"
+      },
+      "C": {
+        "text": "Basic testing only",
+        "score": 3,
+        "recommendation": "Expand your testing to include edge cases, adversarial inputs, and prompts from diverse demographic perspectives.",
+        "nextq": "Q14"
+      },
+      "D": {
+        "text": "Minimal or no systematic testing",
+        "score": 5,
+        "recommendation": "Implement a structured testing program before deployment, focusing on both expected usage patterns and potential misuse scenarios.",
+        "nextq": "Q14"
+      }
+    }
+  },
+  {
+    "id": "Q14",
+    "text": "Do you have a clear understanding of your system's failure modes and potential harms?",
+    "answers": {
+      "Yes": {
+        "text": "Yes, documented and well-understood",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q15"
+      },
+      "Partially": {
+        "text": "Partially, major risks identified",
+        "score": 2,
+        "recommendation": "Document all potential failure modes and create mitigation strategies for each one.",
+        "nextq": "Q15"
+      },
+      "No": {
+        "text": "No comprehensive understanding",
+        "score": 5,
+        "recommendation": "Conduct a thorough risk assessment to identify potential harms and failure modes before wider deployment.",
+        "nextq": "Q15"
+      }
+    }
+  },
+  {
+    "id": "Q15",
+    "text": "Do you have monitoring in place to detect when your system is producing problematic outputs?",
+    "answers": {
+      "A": {
+        "text": "Comprehensive monitoring with alerts",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q16"
+      },
+      "B": {
+        "text": "Basic monitoring systems",
+        "score": 2,
+        "recommendation": "Implement more robust monitoring that can detect problematic outputs like hallucinations, toxic content, or biased responses.",
+        "nextq": "Q16"
+      },
+      "C": {
+        "text": "Minimal or no monitoring",
+        "score": 5,
+        "recommendation": "Add monitoring systems to track your system's outputs and alert you to potential issues before they cause widespread harm.",
+        "nextq": "Q16"
+      }
+    }
+  },
+  {
+    "id": "Q16",
+    "text": "Can you turn your AI system off instantly if something goes wrong?\nCan you do this with one click, or do you have to deploy code to take it down?",
+    "answers": {
+      "Yes": {
+        "text": "Yes, immediate shutdown capability",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q17"
+      },
+      "No": {
+        "text": "No immediate shutdown capability",
+        "score": 5,
+        "recommendation": "Graceful degradation.\nImplement an emergency shutdown capability that allows you to immediately stop the system if harmful outputs are detected.",
+        "nextq": "Q17"
+      }
+    }
+  },
+  {
+    "id": "Q17",
+    "text": "Section #3 - Maslov's Hierarchy of needs.\nSlightly updated for the modern era and AI systems. Compares the likelihood of harm with no intervention (if your system didn't exist) to the likelihood of this harm occurring as a result of your intervention.\nTo continue, type 'Ok'",
+    "answers": {
+      "Ok": {
+        "text": "Ok",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q18"
+      }
+    }
+  },
+  {
+    "id": "Q18",
+    "text": "Physiological needs\nWhat's the probability that your GenAI/LLM system could negatively impact your target cohort's Physiological needs? (For example: providing harmful health advice, encouraging dangerous activities, interfering with access to essential services, etc.)",
+    "answers": {
+      "A": {
+        "text": "Very unlikely",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q19"
+      },
+      "B": {
+        "text": "Unlikely",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q19"
+      },
+      "C": {
+        "text": "No different than chance",
+        "score": 3,
+        "recommendation": "",
+        "nextq": "Q19"
+      },
+      "D": {
+        "text": "Likely",
+        "score": 6,
+        "recommendation": "",
+        "nextq": "Q19"
+      },
+      "E": {
+        "text": "Very likely",
+        "score": 8,
+        "recommendation": "",
+        "nextq": "Q19"
+      }
+    }
+  },
+  {
+    "id": "Q19",
+    "text": "Safety needs\nWhat's the probability that your GenAI/LLM system could negatively impact your target cohort's Safety needs? (Digital security, privacy, information security, spreading misinformation about safety issues, identity theft, etc.)",
+    "answers": {
+      "A": {
+        "text": "Very unlikely",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q20"
+      },
+      "B": {
+        "text": "Unlikely",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q20"
+      },
+      "C": {
+        "text": "No different than chance",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q20"
+      },
+      "D": {
+        "text": "Likely",
+        "score": 4,
+        "recommendation": "",
+        "nextq": "Q20"
+      },
+      "E": {
+        "text": "Very likely",
+        "score": 7,
+        "recommendation": "",
+        "nextq": "Q20"
+      }
+    }
+  },
+  {
+    "id": "Q20",
+    "text": "Love and belonging needs\nWhat's the probability that your GenAI/LLM system could negatively impact your target cohort's Love and belonging needs? (Creating social division, isolating people, replacing human connection, interfering with relationships, etc.)",
+    "answers": {
+      "A": {
+        "text": "Very unlikely",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q21"
+      },
+      "B": {
+        "text": "Unlikely",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q21"
+      },
+      "C": {
+        "text": "No different than chance",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q21"
+      },
+      "D": {
+        "text": "Likely",
+        "score": 4,
+        "recommendation": "",
+        "nextq": "Q21"
+      },
+      "E": {
+        "text": "Very likely",
+        "score": 6,
+        "recommendation": "",
+        "nextq": "Q21"
+      }
+    }
+  },
+  {
+    "id": "Q21",
+    "text": "Esteem needs\nWhat's the probability that your GenAI/LLM system could negatively impact your target cohort's Esteem needs? (Impacting self-esteem, spreading harmful stereotypes, diminishing human accomplishment, creating dependency, etc.)",
+    "answers": {
+      "A": {
+        "text": "Very unlikely",
+        "score": 0,
+        "recommendation": "",
+        "nextq": "Q22"
+      },
+      "B": {
+        "text": "Unlikely",
+        "score": 1,
+        "recommendation": "",
+        "nextq": "Q22"
+      },
+      "C": {
+        "text": "no different than chance",
+        "score": 2,
+        "recommendation": "",
+        "nextq": "Q22"
+      },
+      "D": {
+        "text": "Likely",
+        "score": 3,
+        "recommendation": "",
+        "nextq": "Q22"
+      },
+      "E": {
+        "text": "Very likely",
+        "score": 5,
+        "recommendation": "",
+        "nextq": "Q22"
+      }
+    }
+  },
+  {
+    "id": "Q22",
+    "text": "Self-actualisation needs\nWhat's the probability that your GenAI/LLM system could negatively impact your target cohort's Self-actualisation needs? (Diminishing human creativity, replacing human agency, deterring personal growth, etc.)",
+    "answers": {
+      "A": {
+        "text": "Very unlikely",
+        "score": 0,
+        "recommendation": "",
+        "nextq": ""
+      },
+      "B": {
+        "text": "Unlikely",
+        "score": 1,
+        "recommendation": "",
+        "nextq": ""
+      },
+      "C": {
+        "text": "No different than chance",
+        "score": 2,
+        "recommendation": "",
+        "nextq": ""
+      },
+      "D": {
+        "text": "Likely",
+        "score": 3,
+        "recommendation": "",
+        "nextq": ""
+      },
+      "E": {
+        "text": "Very likely",
+        "score": 4,
+        "recommendation": "",
+        "nextq": ""
+      }
+    }
+  },
+  {
+    "id": "Results",
+    "results": {
+      "T1": {
+        "range": "0-20",
+        "title": "The white walkers",
+        "text": "This territory belongs to the undead. Turn around! Your GenAI system's risks significantly outweigh its benefits. The potential for misuse, harmful outputs, or unforeseen consequences is extremely high. Consider abandoning this approach or completely rethinking your implementation."
+      },
+      "T2": {
+        "range": "21-40",
+        "title": "Fields of thorns",
+        "text": "This path is paved with dangers and misery. Your GenAI system has significant potential for harm. Consider implementing much stronger safeguards, reducing its scope, or finding an alternative approach that doesn't rely as heavily on generative AI."
+      },
+      "T3": {
+        "range": "41-60",
+        "title": "Winter is coming",
+        "text": "Your GenAI system has moderate risk. You need substantial safety mechanisms, monitoring systems, and clear user guidance to prevent potential harms. Follow the recommendations to strengthen your approach before deployment."
+      },
+      "T4": {
+        "range": "61-80",
+        "title": "The stronghold",
+        "text": "You're shoring up your castle walls with a fairly responsible GenAI implementation. While not perfect, your system has reasonable safeguards. Continue improving based on the recommendations, especially as you scale to more users."
+      },
+      "T5": {
+        "range": "81-99",
+        "title": "Castles in the sky",
+        "text": "You've found the highest ground! Your GenAI system has thoughtfully addressed most risk factors. You've made responsible design choices and implemented good safeguards. Still, remain vigilant as AI capabilities evolve."
+      }
+    }
+  }
+]
